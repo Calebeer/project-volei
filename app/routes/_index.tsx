@@ -1,110 +1,126 @@
-import type { V2_MetaFunction } from "@remix-run/node";
-import { Link } from "@remix-run/react";
+import { LoaderFunction } from "@remix-run/node"
+import { useLoaderData } from "@remix-run/react";
+import { prisma } from "~/db.server";
 
-import { useOptionalUser } from "~/utils";
+export let loader: LoaderFunction = async({ request }) => { 
+  const url = new URL(request.url);
+    const queryParams = url.searchParams;
 
-export const meta: V2_MetaFunction = () => [{ title: "Remix Notes" }];
+    const nome_cliente = queryParams.get('nome_cliente');
+    const nome_remedio = queryParams.get('nome_remedio');
+    const fabricacao = queryParams.get('fabricacao');
+    const nome_funcionario = queryParams.get('nome_funcionario');
 
-export default function Index() {
-  const user = useOptionalUser();
-  return (
-    <main className="relative min-h-screen bg-white sm:flex sm:items-center sm:justify-center">
-      <div className="relative sm:pb-16 sm:pt-8">
-        <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="relative shadow-xl sm:overflow-hidden sm:rounded-2xl">
-            <div className="absolute inset-0">
-              <img
-                className="h-full w-full object-cover"
-                src="https://user-images.githubusercontent.com/1500684/157774694-99820c51-8165-4908-a031-34fc371ac0d6.jpg"
-                alt="Sonic Youth On Stage"
-              />
-              <div className="absolute inset-0 bg-[color:rgba(254,204,27,0.5)] mix-blend-multiply" />
-            </div>
-            <div className="relative px-4 pb-8 pt-16 sm:px-6 sm:pb-14 sm:pt-24 lg:px-8 lg:pb-20 lg:pt-32">
-              <h1 className="text-center text-6xl font-extrabold tracking-tight sm:text-8xl lg:text-9xl">
-                <span className="block uppercase text-yellow-500 drop-shadow-md">
-                  Calebe Apollo
-                </span>
-              </h1>
-              <p className="mx-auto mt-6 max-w-lg text-center text-xl text-white sm:max-w-3xl">
-                Eu sou calebe apollo
-              </p>
-              <div className="mx-auto mt-10 max-w-sm sm:flex sm:max-w-none sm:justify-center">
-                {user ? (
-                  <Link
-                    to="/notes"
-                    className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-yellow-700 shadow-sm hover:bg-yellow-50 sm:px-8"
-                  >
-                    View Notes for {user.email}
-                  </Link>
-                ) : (
-                  <div className="space-y-4 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5 sm:space-y-0">
-                    <Link
-                      to="/join"
-                      className="flex items-center justify-center rounded-md border border-transparent bg-white px-4 py-3 text-base font-medium text-yellow-700 shadow-sm hover:bg-yellow-50 sm:px-8"
-                    >
-                      Sign up
-                    </Link>
-                    <Link
-                      to="/login"
-                      className="flex items-center justify-center rounded-md bg-yellow-500 px-4 py-3 font-medium text-white hover:bg-yellow-600"
-                    >
-                      Log In
-                    </Link>
-                    <Link
-                      to="/login"
-                      className="flex items-center justify-center rounded-md bg-red-500 px-4 py-3 font-medium text-white hover:bg-yellow-600"
-                    >
-                      Calebe
-                    </Link>
-                  </div>
-                )}
-              </div>
-              <a href="https://remix.run">
-                <img
-                  src="https://user-images.githubusercontent.com/1500684/158298926-e45dafff-3544-4b69-96d6-d3bcc33fc76a.svg"
-                  alt="Remix"
-                  className="mx-auto mt-16 w-full max-w-[12rem] md:max-w-[16rem]"
-                />
-              </a>
-            </div>
-          </div>
-        </div>
+    if(!nome_cliente){
+        return{error:'Não foi fornecido um nome'}
+    }
 
-        <div className="mx-auto max-w-7xl px-4 py-2 sm:px-6 lg:px-8">
-          <div className="mt-6 flex flex-wrap justify-center gap-8">
-            {[
-              {
-                src: "https://user-images.githubusercontent.com/1500684/157764397-ccd8ea10-b8aa-4772-a99b-35de937319e1.svg",
-                alt: "nom",
-                href: "https://fly.io",
-              },
-              {
-                src: "https://cbissn.ibict.br/images/phocagallery/galeria2/thumbs/phoca_thumb_l_image03_grd.png",
-                alt: "SQLite",
-                href: "https://sqlite.org",
-              },
-              {
-                src: "https://cbissn.ibict.br/images/phocagallery/galeria2/thumbs/phoca_thumb_l_image03_grd.png",
-                alt: "SQLite",
-                href: "https://sqlite.org",
-              }
-            ].map((img) => (
-              <div className="">
-                <img className="h-16 w-32" src={img.src} />
-                 {/* {img.src} */}
-              </div>
-              // <a
-              //   key={img.href}
-              //   href={img.href}
-              //   className="flex h-16 w-32 justify-center p-1 grayscale transition hover:grayscale-0 focus:grayscale-0"
-              // >
-              //   <img alt={img.alt} src={img.src} className="object-contain" />
-              // </a>
-            ))}
-          </div>
-        </div>
-      </div>
-    </main>
-  );
+    if(!nome_remedio){
+        return{error:'Não foi fornecido uma idade'}
+    }
+
+    if(!fabricacao){
+        return{error:'Não foi fornecido um nome'}
+    }
+
+    if(!nome_funcionario){
+        return{error:'Não foi fornecido um nome'}
+    }
+
+    await prisma.farmacia.create({
+        data: {
+          nome_pessoa:nome_cliente,
+          fabricacao:fabricacao,
+          nome_remedio:nome_remedio,
+          funcionario:nome_funcionario
+
+          
+        }
+      })
+
+      
+
+   
+
+    return{sucess:true}
+
 }
+
+export default function Example() {
+    return (
+      <>
+        {/*
+          This example requires updating your template:
+  
+          
+          <html class="h-full bg-white">
+          <body class="h-full">
+          
+        */}
+        <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
+          <div className="sm:mx-auto sm:w-full sm:max-w-sm">
+            <img
+              className="mx-auto h-10 w-auto"
+              src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+              alt="Your Company"
+            />
+            <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
+              Cadastro
+            </h2>
+          </div>
+  
+          <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+            <form className="space-y-6" action="#" method="get">
+              <div>
+                <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
+                  Nome Cliente
+                </label>
+                <div className="mt-2">
+                  <input name="nome_cliente" type="text" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  />
+                </div>
+              </div>
+
+              <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
+                  Nome Remédio
+                </label>
+                <div className="mt-2">
+                  <input name="nome_remedio" type="text" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  />
+                </div>
+              
+  
+              <div>
+                <div className="flex items-center justify-between">
+                  <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">
+                    Fabricação
+                  </label>
+                </div>
+                <div className="mt-2">
+                  <input name="fabricacao" type="text" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  />
+                </div>
+              </div>
+
+              <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
+                  Funcionário
+                </label>
+                <div className="mt-2">
+                  <input name="nome_funcionario" type="text" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  />
+                </div>
+  
+              <div>
+                <button
+                  type="submit"
+                  className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                >
+                  Salvar
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </>
+    )
+  }
