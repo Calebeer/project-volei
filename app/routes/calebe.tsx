@@ -5,6 +5,9 @@ import { log } from "console";
 import { prisma } from "~/db.server";
 
 export let action: ActionFunction = async({ request }) => { 
+  const url = new URL(request.url);
+    const queryParams = url.searchParams;
+ 
   const formData = await request.formData();
 
   const usuario = formData.get("email") as string;

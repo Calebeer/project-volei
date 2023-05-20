@@ -34,7 +34,7 @@ __export(assets_manifest_exports, {
 });
 var assets_manifest_default, init_assets_manifest = __esm({
   "server-assets-manifest:@remix-run/dev/assets-manifest"() {
-    assets_manifest_default = { version: "67b2064f", entry: { module: "/build/entry.client-SSGQIT7U.js", imports: ["/build/_shared/chunk-FNWMAQCD.js", "/build/_shared/chunk-RQ7GWW3B.js", "/build/_shared/chunk-DG4HR4CT.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-BF2RKW2M.js", imports: ["/build/_shared/chunk-5B6WUN7S.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-E677DIN4.js", imports: ["/build/_shared/chunk-KW6WLGT6.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/calebe": { id: "routes/calebe", parentId: "root", path: "calebe", index: void 0, caseSensitive: void 0, module: "/build/routes/calebe-C33HEBXW.js", imports: ["/build/_shared/chunk-KW6WLGT6.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/healthcheck": { id: "routes/healthcheck", parentId: "root", path: "healthcheck", index: void 0, caseSensitive: void 0, module: "/build/routes/healthcheck-K345YID3.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/join": { id: "routes/join", parentId: "root", path: "join", index: void 0, caseSensitive: void 0, module: "/build/routes/join-4EUEKWEI.js", imports: ["/build/_shared/chunk-42QKJIDW.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/login": { id: "routes/login", parentId: "root", path: "login", index: void 0, caseSensitive: void 0, module: "/build/routes/login-FWSEYTE7.js", imports: ["/build/_shared/chunk-KW6WLGT6.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/logout": { id: "routes/logout", parentId: "root", path: "logout", index: void 0, caseSensitive: void 0, module: "/build/routes/logout-IVCPR3TQ.js", imports: void 0, hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/notes": { id: "routes/notes", parentId: "root", path: "notes", index: void 0, caseSensitive: void 0, module: "/build/routes/notes-NGL22VWH.js", imports: ["/build/_shared/chunk-42QKJIDW.js", "/build/_shared/chunk-AC7UQQEL.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/notes.$noteId": { id: "routes/notes.$noteId", parentId: "routes/notes", path: ":noteId", index: void 0, caseSensitive: void 0, module: "/build/routes/notes.$noteId-35FUXSHC.js", imports: ["/build/_shared/chunk-5B6WUN7S.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/notes._index": { id: "routes/notes._index", parentId: "routes/notes", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/notes._index-IM26THV6.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/notes.new": { id: "routes/notes.new", parentId: "routes/notes", path: "new", index: void 0, caseSensitive: void 0, module: "/build/routes/notes.new-CSFPX4VP.js", imports: ["/build/_shared/chunk-5B6WUN7S.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, hmr: void 0, url: "/build/manifest-67B2064F.js" };
+    assets_manifest_default = { version: "d1501c43", entry: { module: "/build/entry.client-SSGQIT7U.js", imports: ["/build/_shared/chunk-FNWMAQCD.js", "/build/_shared/chunk-RQ7GWW3B.js", "/build/_shared/chunk-DG4HR4CT.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-ECVKZUYG.js", imports: ["/build/_shared/chunk-5B6WUN7S.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-AMGVQ2SY.js", imports: ["/build/_shared/chunk-KW6WLGT6.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/calebe": { id: "routes/calebe", parentId: "root", path: "calebe", index: void 0, caseSensitive: void 0, module: "/build/routes/calebe-67XOU24N.js", imports: ["/build/_shared/chunk-KW6WLGT6.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/healthcheck": { id: "routes/healthcheck", parentId: "root", path: "healthcheck", index: void 0, caseSensitive: void 0, module: "/build/routes/healthcheck-K345YID3.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/join": { id: "routes/join", parentId: "root", path: "join", index: void 0, caseSensitive: void 0, module: "/build/routes/join-4EUEKWEI.js", imports: ["/build/_shared/chunk-42QKJIDW.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/login": { id: "routes/login", parentId: "root", path: "login", index: void 0, caseSensitive: void 0, module: "/build/routes/login-FWSEYTE7.js", imports: ["/build/_shared/chunk-KW6WLGT6.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/logout": { id: "routes/logout", parentId: "root", path: "logout", index: void 0, caseSensitive: void 0, module: "/build/routes/logout-IVCPR3TQ.js", imports: void 0, hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/notes": { id: "routes/notes", parentId: "root", path: "notes", index: void 0, caseSensitive: void 0, module: "/build/routes/notes-NGL22VWH.js", imports: ["/build/_shared/chunk-42QKJIDW.js", "/build/_shared/chunk-AC7UQQEL.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/notes.$noteId": { id: "routes/notes.$noteId", parentId: "routes/notes", path: ":noteId", index: void 0, caseSensitive: void 0, module: "/build/routes/notes.$noteId-35FUXSHC.js", imports: ["/build/_shared/chunk-5B6WUN7S.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/notes._index": { id: "routes/notes._index", parentId: "routes/notes", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/notes._index-IM26THV6.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/notes.new": { id: "routes/notes.new", parentId: "routes/notes", path: "new", index: void 0, caseSensitive: void 0, module: "/build/routes/notes.new-CSFPX4VP.js", imports: ["/build/_shared/chunk-5B6WUN7S.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, hmr: void 0, url: "/build/manifest-D1501C43.js" };
   }
 });
 
@@ -265,7 +265,7 @@ async function logout(request) {
 }
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-C6UHYCRK.css";
+var tailwind_default = "/build/_assets/tailwind-UC3CCGKD.css";
 
 // app/root.tsx
 var import_jsx_dev_runtime2 = require("react/jsx-dev-runtime"), links = () => [
@@ -743,7 +743,7 @@ function Example() {
         lineNumber: 74,
         columnNumber: 15
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("label", { htmlFor: "email", className: "block text-sm font-medium leading-6 text-gray-900", children: "Nome Rem\xE9dio hhh" }, void 0, !1, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime6.jsxDEV)("label", { htmlFor: "email", className: "block text-sm font-medium leading-6 text-gray-900", children: "Nome Rem\xE9dio" }, void 0, !1, {
         fileName: "app/routes/_index.tsx",
         lineNumber: 84,
         columnNumber: 15
@@ -877,7 +877,7 @@ __export(calebe_exports, {
 });
 var import_server_runtime = require("@remix-run/server-runtime"), import_react7 = require("@remix-run/react");
 var import_jsx_dev_runtime7 = require("react/jsx-dev-runtime"), action3 = async ({ request }) => {
-  let formData = await request.formData(), usuario = formData.get("email"), senha = formData.get("senha"), usuarioEncontrado = await prisma.user.findFirst({
+  let queryParams = new URL(request.url).searchParams, formData = await request.formData(), usuario = formData.get("email"), senha = formData.get("senha"), usuarioEncontrado = await prisma.user.findFirst({
     where: {
       usuario,
       senha
@@ -911,38 +911,38 @@ function Example2() {
     JSON.stringify(usuario),
     /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("p", { children: usuario.nome }, void 0, !1, {
       fileName: "app/routes/calebe.tsx",
-      lineNumber: 80,
+      lineNumber: 83,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("h2", { className: "text-4xl", children: usuario.idade }, void 0, !1, {
       fileName: "app/routes/calebe.tsx",
-      lineNumber: 84,
+      lineNumber: 87,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("pre", { children: JSON.stringify(notas, null, 2) }, void 0, !1, {
       fileName: "app/routes/calebe.tsx",
-      lineNumber: 89,
+      lineNumber: 92,
       columnNumber: 5
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("h1", { className: "text-4xl", children: notas[0].titulo }, void 0, !1, {
       fileName: "app/routes/calebe.tsx",
-      lineNumber: 95,
+      lineNumber: 98,
       columnNumber: 5
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("p", { children: notas[0].corpo }, void 0, !1, {
       fileName: "app/routes/calebe.tsx",
-      lineNumber: 100,
+      lineNumber: 103,
       columnNumber: 5
     }, this),
     "......................",
     notas.map(
       (nota) => /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("h1", { className: "text-4xl", children: nota.titulo }, void 0, !1, {
         fileName: "app/routes/calebe.tsx",
-        lineNumber: 109,
+        lineNumber: 112,
         columnNumber: 13
       }, this) }, void 0, !1, {
         fileName: "app/routes/calebe.tsx",
-        lineNumber: 108,
+        lineNumber: 111,
         columnNumber: 11
       }, this)
     ),
@@ -952,20 +952,20 @@ function Example2() {
       index
     ] }, void 0, !0, {
       fileName: "app/routes/calebe.tsx",
-      lineNumber: 124,
+      lineNumber: 127,
       columnNumber: 11
     }, this) }, void 0, !1, {
       fileName: "app/routes/calebe.tsx",
-      lineNumber: 123,
+      lineNumber: 126,
       columnNumber: 9
     }, this)),
     /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("select", { name: "", id: "", children: remedios.map((remedio) => /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("option", { value: "", children: remedio.nome_remedio }, void 0, !1, {
       fileName: "app/routes/calebe.tsx",
-      lineNumber: 138,
+      lineNumber: 141,
       columnNumber: 13
     }, this)) }, void 0, !1, {
       fileName: "app/routes/calebe.tsx",
-      lineNumber: 135,
+      lineNumber: 138,
       columnNumber: 5
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8", children: [
@@ -981,26 +981,26 @@ function Example2() {
           !1,
           {
             fileName: "app/routes/calebe.tsx",
-            lineNumber: 159,
+            lineNumber: 162,
             columnNumber: 11
           },
           this
         ),
         /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("h2", { className: "mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900", children: "Acessar sistema" }, void 0, !1, {
           fileName: "app/routes/calebe.tsx",
-          lineNumber: 164,
+          lineNumber: 167,
           columnNumber: 11
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/calebe.tsx",
-        lineNumber: 158,
+        lineNumber: 161,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "mt-10 sm:mx-auto sm:w-full sm:max-w-sm", children: /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(import_react7.Form, { className: "space-y-6", action: "", method: "POST", children: [
         /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("label", { htmlFor: "email", className: "block text-sm font-medium leading-6 text-gray-900", children: "Nome" }, void 0, !1, {
             fileName: "app/routes/calebe.tsx",
-            lineNumber: 172,
+            lineNumber: 175,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "mt-2", children: /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(
@@ -1017,35 +1017,35 @@ function Example2() {
             !1,
             {
               fileName: "app/routes/calebe.tsx",
-              lineNumber: 176,
+              lineNumber: 179,
               columnNumber: 17
             },
             this
           ) }, void 0, !1, {
             fileName: "app/routes/calebe.tsx",
-            lineNumber: 175,
+            lineNumber: 178,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/calebe.tsx",
-          lineNumber: 171,
+          lineNumber: 174,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "flex items-center justify-between", children: [
             /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("label", { htmlFor: "password", className: "block text-sm font-medium leading-6 text-gray-900", children: "Senha" }, void 0, !1, {
               fileName: "app/routes/calebe.tsx",
-              lineNumber: 189,
+              lineNumber: 192,
               columnNumber: 17
             }, this),
             /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "text-sm" }, void 0, !1, {
               fileName: "app/routes/calebe.tsx",
-              lineNumber: 192,
+              lineNumber: 195,
               columnNumber: 17
             }, this)
           ] }, void 0, !0, {
             fileName: "app/routes/calebe.tsx",
-            lineNumber: 188,
+            lineNumber: 191,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { className: "mt-2", children: /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(
@@ -1062,18 +1062,18 @@ function Example2() {
             !1,
             {
               fileName: "app/routes/calebe.tsx",
-              lineNumber: 196,
+              lineNumber: 199,
               columnNumber: 17
             },
             this
           ) }, void 0, !1, {
             fileName: "app/routes/calebe.tsx",
-            lineNumber: 195,
+            lineNumber: 198,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/calebe.tsx",
-          lineNumber: 187,
+          lineNumber: 190,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)("div", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime7.jsxDEV)(
@@ -1087,32 +1087,32 @@ function Example2() {
           !1,
           {
             fileName: "app/routes/calebe.tsx",
-            lineNumber: 208,
+            lineNumber: 211,
             columnNumber: 15
           },
           this
         ) }, void 0, !1, {
           fileName: "app/routes/calebe.tsx",
-          lineNumber: 207,
+          lineNumber: 210,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/calebe.tsx",
-        lineNumber: 170,
+        lineNumber: 173,
         columnNumber: 11
       }, this) }, void 0, !1, {
         fileName: "app/routes/calebe.tsx",
-        lineNumber: 169,
+        lineNumber: 172,
         columnNumber: 9
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/calebe.tsx",
-      lineNumber: 157,
+      lineNumber: 160,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
     fileName: "app/routes/calebe.tsx",
-    lineNumber: 60,
+    lineNumber: 63,
     columnNumber: 5
   }, this);
 }

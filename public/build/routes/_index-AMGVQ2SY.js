@@ -89,7 +89,7 @@ function Example() {
         lineNumber: 74,
         columnNumber: 15
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("label", { htmlFor: "email", className: "block text-sm font-medium leading-6 text-gray-900", children: "Nome Rem\xE9dio hhh" }, void 0, false, {
+      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("label", { htmlFor: "email", className: "block text-sm font-medium leading-6 text-gray-900", children: "Nome Rem\xE9dio" }, void 0, false, {
         fileName: "app/routes/_index.tsx",
         lineNumber: 84,
         columnNumber: 15
@@ -216,4 +216,4 @@ function Example() {
 export {
   Example as default
 };
-//# sourceMappingURL=/build/routes/_index-E677DIN4.js.map
+//# sourceMappingURL=/build/routes/_index-AMGVQ2SY.js.map

@@ -52,38 +52,38 @@ function Example() {
     JSON.stringify(usuario),
     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", { children: usuario.nome }, void 0, false, {
       fileName: "app/routes/calebe.tsx",
-      lineNumber: 80,
+      lineNumber: 83,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h2", { className: "text-4xl", children: usuario.idade }, void 0, false, {
       fileName: "app/routes/calebe.tsx",
-      lineNumber: 84,
+      lineNumber: 87,
       columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("pre", { children: JSON.stringify(notas, null, 2) }, void 0, false, {
       fileName: "app/routes/calebe.tsx",
-      lineNumber: 89,
+      lineNumber: 92,
       columnNumber: 5
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h1", { className: "text-4xl", children: notas[0].titulo }, void 0, false, {
       fileName: "app/routes/calebe.tsx",
-      lineNumber: 95,
+      lineNumber: 98,
       columnNumber: 5
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", { children: notas[0].corpo }, void 0, false, {
       fileName: "app/routes/calebe.tsx",
-      lineNumber: 100,
+      lineNumber: 103,
       columnNumber: 5
     }, this),
     "......................",
     notas.map(
       (nota) => /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h1", { className: "text-4xl", children: nota.titulo }, void 0, false, {
         fileName: "app/routes/calebe.tsx",
-        lineNumber: 109,
+        lineNumber: 112,
         columnNumber: 13
       }, this) }, void 0, false, {
         fileName: "app/routes/calebe.tsx",
-        lineNumber: 108,
+        lineNumber: 111,
         columnNumber: 11
       }, this)
     ),
@@ -93,20 +93,20 @@ function Example() {
       index
     ] }, void 0, true, {
       fileName: "app/routes/calebe.tsx",
-      lineNumber: 124,
+      lineNumber: 127,
       columnNumber: 11
     }, this) }, void 0, false, {
       fileName: "app/routes/calebe.tsx",
-      lineNumber: 123,
+      lineNumber: 126,
       columnNumber: 9
     }, this)),
     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("select", { name: "", id: "", children: remedios.map((remedio) => /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("option", { value: "", children: remedio.nome_remedio }, void 0, false, {
       fileName: "app/routes/calebe.tsx",
-      lineNumber: 138,
+      lineNumber: 141,
       columnNumber: 13
     }, this)) }, void 0, false, {
       fileName: "app/routes/calebe.tsx",
-      lineNumber: 135,
+      lineNumber: 138,
       columnNumber: 5
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8", children: [
@@ -122,26 +122,26 @@ function Example() {
           false,
           {
             fileName: "app/routes/calebe.tsx",
-            lineNumber: 159,
+            lineNumber: 162,
             columnNumber: 11
           },
           this
         ),
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h2", { className: "mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900", children: "Acessar sistema" }, void 0, false, {
           fileName: "app/routes/calebe.tsx",
-          lineNumber: 164,
+          lineNumber: 167,
           columnNumber: 11
         }, this)
       ] }, void 0, true, {
         fileName: "app/routes/calebe.tsx",
-        lineNumber: 158,
+        lineNumber: 161,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "mt-10 sm:mx-auto sm:w-full sm:max-w-sm", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Form, { className: "space-y-6", action: "", method: "POST", children: [
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("label", { htmlFor: "email", className: "block text-sm font-medium leading-6 text-gray-900", children: "Nome" }, void 0, false, {
             fileName: "app/routes/calebe.tsx",
-            lineNumber: 172,
+            lineNumber: 175,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "mt-2", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(
@@ -158,35 +158,35 @@ function Example() {
             false,
             {
               fileName: "app/routes/calebe.tsx",
-              lineNumber: 176,
+              lineNumber: 179,
               columnNumber: 17
             },
             this
           ) }, void 0, false, {
             fileName: "app/routes/calebe.tsx",
-            lineNumber: 175,
+            lineNumber: 178,
             columnNumber: 15
           }, this)
         ] }, void 0, true, {
           fileName: "app/routes/calebe.tsx",
-          lineNumber: 171,
+          lineNumber: 174,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "flex items-center justify-between", children: [
             /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("label", { htmlFor: "password", className: "block text-sm font-medium leading-6 text-gray-900", children: "Senha" }, void 0, false, {
               fileName: "app/routes/calebe.tsx",
-              lineNumber: 189,
+              lineNumber: 192,
               columnNumber: 17
             }, this),
             /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "text-sm" }, void 0, false, {
               fileName: "app/routes/calebe.tsx",
-              lineNumber: 192,
+              lineNumber: 195,
               columnNumber: 17
             }, this)
           ] }, void 0, true, {
             fileName: "app/routes/calebe.tsx",
-            lineNumber: 188,
+            lineNumber: 191,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "mt-2", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(
@@ -203,18 +203,18 @@ function Example() {
             false,
             {
               fileName: "app/routes/calebe.tsx",
-              lineNumber: 196,
+              lineNumber: 199,
               columnNumber: 17
             },
             this
           ) }, void 0, false, {
             fileName: "app/routes/calebe.tsx",
-            lineNumber: 195,
+            lineNumber: 198,
             columnNumber: 15
           }, this)
         ] }, void 0, true, {
           fileName: "app/routes/calebe.tsx",
-          lineNumber: 187,
+          lineNumber: 190,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(
@@ -228,36 +228,36 @@ function Example() {
           false,
           {
             fileName: "app/routes/calebe.tsx",
-            lineNumber: 208,
+            lineNumber: 211,
             columnNumber: 15
           },
           this
         ) }, void 0, false, {
           fileName: "app/routes/calebe.tsx",
-          lineNumber: 207,
+          lineNumber: 210,
           columnNumber: 13
         }, this)
       ] }, void 0, true, {
         fileName: "app/routes/calebe.tsx",
-        lineNumber: 170,
+        lineNumber: 173,
         columnNumber: 11
       }, this) }, void 0, false, {
         fileName: "app/routes/calebe.tsx",
-        lineNumber: 169,
+        lineNumber: 172,
         columnNumber: 9
       }, this)
     ] }, void 0, true, {
       fileName: "app/routes/calebe.tsx",
-      lineNumber: 157,
+      lineNumber: 160,
       columnNumber: 7
     }, this)
   ] }, void 0, true, {
     fileName: "app/routes/calebe.tsx",
-    lineNumber: 60,
+    lineNumber: 63,
     columnNumber: 5
   }, this);
 }
 export {
   Example as default
 };
-//# sourceMappingURL=/build/routes/calebe-C33HEBXW.js.map
+//# sourceMappingURL=/build/routes/calebe-67XOU24N.js.map
