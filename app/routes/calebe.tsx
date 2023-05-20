@@ -40,7 +40,7 @@ return 'a'
 
 }
 
-export let loader: LoaderFunction = async({ request }: LoaderArgs) => { 
+export async function loader() { 
   const remedios = await prisma.farmacia.findMany()
   return json({remedios})
 }
