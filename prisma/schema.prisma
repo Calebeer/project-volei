@@ -16,3 +16,9 @@ model farmacia{
 
   funcionario String
 }
+
+model user{
+  id Int @id @default(autoincrement())
+  usuario String @unique
+  senha String 
+}
