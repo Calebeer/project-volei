@@ -27,7 +27,13 @@ model user{
 model cliente{
   id Int @id @default(autoincrement())
   nome String 
-  cpf Int @unique
+  cpf String @unique
   endereco String
-  telefone Int 
+  telefone String
+}
+
+model venda{
+  id Int @id @default(autoincrement())
+  cliente_id 
+  
 }

@@ -34,7 +34,7 @@ __export(assets_manifest_exports, {
 });
 var assets_manifest_default, init_assets_manifest = __esm({
   "server-assets-manifest:@remix-run/dev/assets-manifest"() {
-    assets_manifest_default = { version: "8307383d", entry: { module: "/build/entry.client-SSGQIT7U.js", imports: ["/build/_shared/chunk-FNWMAQCD.js", "/build/_shared/chunk-RQ7GWW3B.js", "/build/_shared/chunk-DG4HR4CT.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-BF2RKW2M.js", imports: ["/build/_shared/chunk-5B6WUN7S.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-AMGVQ2SY.js", imports: ["/build/_shared/chunk-KW6WLGT6.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/calebe": { id: "routes/calebe", parentId: "root", path: "calebe", index: void 0, caseSensitive: void 0, module: "/build/routes/calebe-R3LW2GOJ.js", imports: ["/build/_shared/chunk-KW6WLGT6.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/join": { id: "routes/join", parentId: "root", path: "join", index: void 0, caseSensitive: void 0, module: "/build/routes/join-4EUEKWEI.js", imports: ["/build/_shared/chunk-42QKJIDW.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/login": { id: "routes/login", parentId: "root", path: "login", index: void 0, caseSensitive: void 0, module: "/build/routes/login-FWSEYTE7.js", imports: ["/build/_shared/chunk-KW6WLGT6.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/login_cliente": { id: "routes/login_cliente", parentId: "root", path: "login_cliente", index: void 0, caseSensitive: void 0, module: "/build/routes/login_cliente-27UCGPZ3.js", imports: ["/build/_shared/chunk-KW6WLGT6.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/logout": { id: "routes/logout", parentId: "root", path: "logout", index: void 0, caseSensitive: void 0, module: "/build/routes/logout-IVCPR3TQ.js", imports: void 0, hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/notes": { id: "routes/notes", parentId: "root", path: "notes", index: void 0, caseSensitive: void 0, module: "/build/routes/notes-NGL22VWH.js", imports: ["/build/_shared/chunk-42QKJIDW.js", "/build/_shared/chunk-AC7UQQEL.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/notes.$noteId": { id: "routes/notes.$noteId", parentId: "routes/notes", path: ":noteId", index: void 0, caseSensitive: void 0, module: "/build/routes/notes.$noteId-35FUXSHC.js", imports: ["/build/_shared/chunk-5B6WUN7S.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/notes._index": { id: "routes/notes._index", parentId: "routes/notes", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/notes._index-IM26THV6.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/notes.new": { id: "routes/notes.new", parentId: "routes/notes", path: "new", index: void 0, caseSensitive: void 0, module: "/build/routes/notes.new-CSFPX4VP.js", imports: ["/build/_shared/chunk-5B6WUN7S.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, hmr: void 0, url: "/build/manifest-8307383D.js" };
+    assets_manifest_default = { version: "9eba2d52", entry: { module: "/build/entry.client-SSGQIT7U.js", imports: ["/build/_shared/chunk-FNWMAQCD.js", "/build/_shared/chunk-RQ7GWW3B.js", "/build/_shared/chunk-DG4HR4CT.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-XRSHK7RQ.js", imports: ["/build/_shared/chunk-5B6WUN7S.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/_index": { id: "routes/_index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/_index-AMGVQ2SY.js", imports: ["/build/_shared/chunk-KW6WLGT6.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/calebe": { id: "routes/calebe", parentId: "root", path: "calebe", index: void 0, caseSensitive: void 0, module: "/build/routes/calebe-R3LW2GOJ.js", imports: ["/build/_shared/chunk-KW6WLGT6.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/join": { id: "routes/join", parentId: "root", path: "join", index: void 0, caseSensitive: void 0, module: "/build/routes/join-4EUEKWEI.js", imports: ["/build/_shared/chunk-42QKJIDW.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/login": { id: "routes/login", parentId: "root", path: "login", index: void 0, caseSensitive: void 0, module: "/build/routes/login-FWSEYTE7.js", imports: ["/build/_shared/chunk-KW6WLGT6.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/login_cliente": { id: "routes/login_cliente", parentId: "root", path: "login_cliente", index: void 0, caseSensitive: void 0, module: "/build/routes/login_cliente-YSSRXS44.js", imports: ["/build/_shared/chunk-KW6WLGT6.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/logout": { id: "routes/logout", parentId: "root", path: "logout", index: void 0, caseSensitive: void 0, module: "/build/routes/logout-IVCPR3TQ.js", imports: void 0, hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/notes": { id: "routes/notes", parentId: "root", path: "notes", index: void 0, caseSensitive: void 0, module: "/build/routes/notes-NGL22VWH.js", imports: ["/build/_shared/chunk-42QKJIDW.js", "/build/_shared/chunk-AC7UQQEL.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/notes.$noteId": { id: "routes/notes.$noteId", parentId: "routes/notes", path: ":noteId", index: void 0, caseSensitive: void 0, module: "/build/routes/notes.$noteId-35FUXSHC.js", imports: ["/build/_shared/chunk-5B6WUN7S.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/notes._index": { id: "routes/notes._index", parentId: "routes/notes", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/notes._index-IM26THV6.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/notes.new": { id: "routes/notes.new", parentId: "routes/notes", path: "new", index: void 0, caseSensitive: void 0, module: "/build/routes/notes.new-CSFPX4VP.js", imports: ["/build/_shared/chunk-5B6WUN7S.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, hmr: void 0, url: "/build/manifest-9EBA2D52.js" };
   }
 });
 
@@ -265,7 +265,7 @@ async function logout(request) {
 }
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-C6UHYCRK.css";
+var tailwind_default = "/build/_assets/tailwind-Z5CBKWKE.css";
 
 // app/root.tsx
 var import_jsx_dev_runtime2 = require("react/jsx-dev-runtime"), links = () => [
@@ -340,13 +340,13 @@ __export(login_cliente_exports, {
   loader: () => loader2
 });
 var import_jsx_dev_runtime3 = require("react/jsx-dev-runtime"), loader2 = async ({ request }) => {
-  let queryParams = new URL(request.url).searchParams, nome_cliente = queryParams.get("nome_cliente"), nome_remedio = queryParams.get("cpf"), fabricacao = queryParams.get("endereco"), nome_funcionario = queryParams.get("telefone");
-  return nome_cliente ? nome_remedio ? fabricacao ? nome_funcionario ? (await prisma.farmacia.create({
+  let queryParams = new URL(request.url).searchParams, nome_cliente = queryParams.get("nome_cliente"), cpf = queryParams.get("cpf"), endereco = queryParams.get("endereco"), telefone = queryParams.get("telefone");
+  return nome_cliente ? cpf ? endereco ? telefone ? (await prisma.cliente.create({
     data: {
-      nome_pessoa: nome_cliente,
-      fabricacao,
-      nome_remedio,
-      funcionario: nome_funcionario
+      nome: nome_cliente,
+      cpf,
+      endereco,
+      telefone
     }
   }), { sucess: !0 }) : { error: "N\xE3o foi fornecido um nome" } : { error: "N\xE3o foi fornecido um nome" } : { error: "N\xE3o foi fornecido uma idade" } : { error: "N\xE3o foi fornecido um nome" };
 };
@@ -364,26 +364,26 @@ function Example() {
         !1,
         {
           fileName: "app/routes/login_cliente.tsx",
-          lineNumber: 62,
+          lineNumber: 64,
           columnNumber: 13
         },
         this
       ),
       /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("h2", { className: "mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900", children: "Cadastro Cliente" }, void 0, !1, {
         fileName: "app/routes/login_cliente.tsx",
-        lineNumber: 67,
+        lineNumber: 69,
         columnNumber: 13
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/login_cliente.tsx",
-      lineNumber: 61,
+      lineNumber: 63,
       columnNumber: 11
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "mt-10 sm:mx-auto sm:w-full sm:max-w-sm", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("form", { className: "space-y-6", action: "#", method: "get", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { children: [
         /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("label", { htmlFor: "email", className: "block text-sm font-medium leading-6 text-gray-900", children: "Nome Cliente" }, void 0, !1, {
           fileName: "app/routes/login_cliente.tsx",
-          lineNumber: 75,
+          lineNumber: 77,
           columnNumber: 17
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "mt-2", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(
@@ -397,23 +397,23 @@ function Example() {
           !1,
           {
             fileName: "app/routes/login_cliente.tsx",
-            lineNumber: 79,
+            lineNumber: 81,
             columnNumber: 19
           },
           this
         ) }, void 0, !1, {
           fileName: "app/routes/login_cliente.tsx",
-          lineNumber: 78,
+          lineNumber: 80,
           columnNumber: 17
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/login_cliente.tsx",
-        lineNumber: 74,
+        lineNumber: 76,
         columnNumber: 15
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("label", { htmlFor: "email", className: "block text-sm font-medium leading-6 text-gray-900", children: "CPF" }, void 0, !1, {
         fileName: "app/routes/login_cliente.tsx",
-        lineNumber: 84,
+        lineNumber: 86,
         columnNumber: 15
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "mt-2", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(
@@ -427,23 +427,23 @@ function Example() {
         !1,
         {
           fileName: "app/routes/login_cliente.tsx",
-          lineNumber: 88,
+          lineNumber: 90,
           columnNumber: 19
         },
         this
       ) }, void 0, !1, {
         fileName: "app/routes/login_cliente.tsx",
-        lineNumber: 87,
+        lineNumber: 89,
         columnNumber: 17
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { children: [
         /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "flex items-center justify-between", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("label", { htmlFor: "password", className: "block text-sm font-medium leading-6 text-gray-900", children: "Endere\xE7o" }, void 0, !1, {
           fileName: "app/routes/login_cliente.tsx",
-          lineNumber: 95,
+          lineNumber: 97,
           columnNumber: 19
         }, this) }, void 0, !1, {
           fileName: "app/routes/login_cliente.tsx",
-          lineNumber: 94,
+          lineNumber: 96,
           columnNumber: 17
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "mt-2", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(
@@ -457,23 +457,23 @@ function Example() {
           !1,
           {
             fileName: "app/routes/login_cliente.tsx",
-            lineNumber: 100,
+            lineNumber: 102,
             columnNumber: 19
           },
           this
         ) }, void 0, !1, {
           fileName: "app/routes/login_cliente.tsx",
-          lineNumber: 99,
+          lineNumber: 101,
           columnNumber: 17
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/login_cliente.tsx",
-        lineNumber: 93,
+        lineNumber: 95,
         columnNumber: 15
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("label", { htmlFor: "email", className: "block text-sm font-medium leading-6 text-gray-900", children: "Telefone" }, void 0, !1, {
         fileName: "app/routes/login_cliente.tsx",
-        lineNumber: 105,
+        lineNumber: 107,
         columnNumber: 15
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { className: "mt-2", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(
@@ -487,13 +487,13 @@ function Example() {
         !1,
         {
           fileName: "app/routes/login_cliente.tsx",
-          lineNumber: 109,
+          lineNumber: 111,
           columnNumber: 19
         },
         this
       ) }, void 0, !1, {
         fileName: "app/routes/login_cliente.tsx",
-        lineNumber: 108,
+        lineNumber: 110,
         columnNumber: 17
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("div", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(
@@ -507,31 +507,31 @@ function Example() {
         !1,
         {
           fileName: "app/routes/login_cliente.tsx",
-          lineNumber: 114,
+          lineNumber: 116,
           columnNumber: 17
         },
         this
       ) }, void 0, !1, {
         fileName: "app/routes/login_cliente.tsx",
-        lineNumber: 113,
+        lineNumber: 115,
         columnNumber: 15
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/login_cliente.tsx",
-      lineNumber: 73,
+      lineNumber: 75,
       columnNumber: 13
     }, this) }, void 0, !1, {
       fileName: "app/routes/login_cliente.tsx",
-      lineNumber: 72,
+      lineNumber: 74,
       columnNumber: 11
     }, this)
   ] }, void 0, !0, {
     fileName: "app/routes/login_cliente.tsx",
-    lineNumber: 60,
+    lineNumber: 62,
     columnNumber: 9
   }, this) }, void 0, !1, {
     fileName: "app/routes/login_cliente.tsx",
-    lineNumber: 51,
+    lineNumber: 53,
     columnNumber: 7
   }, this);
 }

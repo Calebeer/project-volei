@@ -27,13 +27,12 @@ export let loader: LoaderFunction = async({ request }) => {
         return{error:'Não foi fornecido um nome'}
     }
 
-    await prisma.farmacia.create({
+    await prisma.cliente.create({
         data: {
-          nome_pessoa:nome_cliente,
-          fabricacao:fabricacao,
-          nome_remedio:nome_remedio,
-          funcionario:nome_funcionario
-
+          nome:nome_cliente,
+          cpf:cpf,
+          endereco:endereco,
+          telefone:telefone
           
         }
       })
@@ -48,6 +47,9 @@ export let loader: LoaderFunction = async({ request }) => {
 
 export default function Example() {
     return (
+      
+      
+      
       <>
         {/*
           This example requires updating your template:
