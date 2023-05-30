@@ -21,4 +21,13 @@ model user{
   id Int @id @default(autoincrement())
   usuario String @unique
   senha String 
+  
+}
+
+model cliente{
+  id Int @id @default(autoincrement())
+  nome String 
+  cpf Int @unique
+  endereco String
+  telefone Int 
 }

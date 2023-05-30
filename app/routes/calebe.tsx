@@ -1,7 +1,6 @@
 import { ActionFunction, LoaderFunction } from "@remix-run/node";
 import { LoaderArgs, json } from "@remix-run/server-runtime";
 import { Form, useLoaderData } from "@remix-run/react"
-import { log } from "console";
 import { prisma } from "~/db.server";
 
 export let action: ActionFunction = async({ request }) => { 
