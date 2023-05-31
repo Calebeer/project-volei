@@ -6,35 +6,27 @@ export let loader: LoaderFunction = async({ request }) => {
   const url = new URL(request.url);
     const queryParams = url.searchParams;
 
-    const nome_cliente = queryParams.get('nome_cliente');
+    const cpf_cliente = queryParams.get('cpf_cliente');
     const nome_remedio = queryParams.get('nome_remedio');
-    const fabricacao = queryParams.get('fabricacao');
-    const nome_funcionario = queryParams.get('nome_funcionario');
+    const quantidade = queryParams.get('quantidade');
 
-    if(!nome_cliente){
-        return{error:'Não foi fornecido um nome'}
+    if(!cpf_cliente){
+        return{error:'Não foi fornecido um cpf'}
     }
 
     if(!nome_remedio){
         return{error:'Não foi fornecido uma idade'}
     }
 
-    if(!fabricacao){
+    if(!quantidade){
         return{error:'Não foi fornecido um nome'}
     }
 
-    if(!nome_funcionario){
-        return{error:'Não foi fornecido um nome'}
-    }
-
-    await prisma.farmacia.create({
+    await prisma.venda.create({
         data: {
-          nome_pessoa:nome_cliente,
-          fabricacao:fabricacao,
+          cpf:cpf_cliente,
           nome_remedio:nome_remedio,
-          funcionario:nome_funcionario
-
-          
+          quantidade:quantidade
         }
       })
 
@@ -46,17 +38,24 @@ export let loader: LoaderFunction = async({ request }) => {
 
 }
 
+export async function loader() { 
+    const cliente = await prisma.cliente.findMany()
+    return json({cliente})
+  }
+
 export default function Example() {
     return (
       <>
-        {/*
-          This example requires updating your template:
-  
-          
-          <html class="h-full bg-white">
-          <body class="h-full">
-          
-        */}
+         <select name="" id="">
+      {
+        cliente.map((cliente) => (
+            <option value="">
+              {cliente.cpf}
+            </option>
+        ))
+      }
+      
+    </select>
         <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
           <div className="sm:mx-auto sm:w-full sm:max-w-sm">
             <img
@@ -65,7 +64,7 @@ export default function Example() {
               alt="Your Company"
             />
             <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
-              Cadastro
+              Realizar Venda
             </h2>
           </div>
   
@@ -73,16 +72,16 @@ export default function Example() {
             <form className="space-y-6" action="#" method="get">
               <div>
                 <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
-                  Nome Cliente
+                  Cpf do Cliente
                 </label>
                 <div className="mt-2">
-                  <input name="nome_cliente" type="text" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  <input name="cpf_cliente" type="text" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
 
               <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
-                  Nome Remédio
+                  Nome do Remédio
                 </label>
                 <div className="mt-2">
                   <input name="nome_remedio" type="text" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -93,22 +92,14 @@ export default function Example() {
               <div>
                 <div className="flex items-center justify-between">
                   <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">
-                    Fabricação
+                    Quantidade
                   </label>
                 </div>
                 <div className="mt-2">
-                  <input name="fabricacao" type="text" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  <input name="quantidade" type="text" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
-
-              <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
-                  Funcionário
-                </label>
-                <div className="mt-2">
-                  <input name="nome_funcionario" type="text" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  />
-                </div>
   
               <div>
                 <button

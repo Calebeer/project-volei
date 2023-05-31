@@ -9,12 +9,10 @@ generator client {
 
 model farmacia{
   id    Int    @id @default(autoincrement())
-  fabricacao String 
+  nome String
 
-  nome_pessoa String
-  nome_remedio String
-
-  funcionario String
+  preco String
+  quantidade String
 }
 
 model user{
@@ -34,6 +32,8 @@ model cliente{
 
 model venda{
   id Int @id @default(autoincrement())
-  cliente_id 
-  
+  cpf String @unique
+  nome_remedio String
+  quantidade String
 }
+
