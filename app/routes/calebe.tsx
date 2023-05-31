@@ -40,8 +40,9 @@ return 'a'
 }
 
 export async function loader() { 
-  const remedios = await prisma.farmacia.findMany()
-  return json({remedios})
+  const cliente = await prisma.cliente.findMany()
+
+  return json({cliente})
 }
 
 export default function Example() {
@@ -56,11 +57,11 @@ export default function Example() {
     { titulo:'nota 3', corpo:'nota 3 testesa' },
   ]
 
- const {remedios} = useLoaderData<typeof loader>();
+ const {cliente} = useLoaderData<typeof loader>();
  
   return (
     <>
-    remedios: {JSON.stringify(remedios)}
+    remedios: {JSON.stringify(cliente)}
       {'Calebe'} 
       {1}
       {[123,2,2,2][1]}
@@ -136,9 +137,9 @@ export default function Example() {
 
     <select name="" id="">
       {
-        remedios.map((remedio) => (
+        cliente.map((clientes) => (
             <option value="">
-              {remedio.nome_remedio}
+              {clientes.cpf}
             </option>
         ))
       }
