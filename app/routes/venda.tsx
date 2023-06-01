@@ -4,6 +4,7 @@ import { useLoaderData } from "@remix-run/react";
 import { prisma } from "~/db.server";
 import { LoaderArgs, json } from "@remix-run/server-runtime";
 import { log } from "console";
+import Navbar from "./navbar";
 
 
 
@@ -76,12 +77,8 @@ export default function Example() {
 
     return (
       <>
-    
 
-      <input type="text" value={primeiraVenda?.nome_remedio} onChange={()=>{
-        
-      }}/>
-
+   <Navbar/>
         <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
           <div className="sm:mx-auto sm:w-full sm:max-w-sm">
             <img

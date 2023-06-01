@@ -203,36 +203,21 @@
 
 
 
-import { XCircleIcon } from '@heroicons/react/20/solid';
-import React, { useState } from 'react';
+import { XCircleIcon } from "@heroicons/react/20/solid";
+import React from "react";
 
-function MeuComponente() {
-  const [texto, setTexto] = useState('');
+export default function ErrorMessage(){
+  return(
+    <div className="rounded-md bg-red-50 p-4">
+      <div className="flex">
+        <div className="flex-shrink-0">
+          <XCircleIcon className="h-5 w-5 text-red-400" aria-hidden="true" />
+        </div>
+        <div className="ml-3">
+          <h3 className="text-sm font-medium text-red-800">Usuário ou senha incorretos</h3>
 
-  const handleEnviar = (event) => {
-    event.preventDefault();
-    const novoTexto = <div className="rounded-md bg-red-50 p-4">
-    <div className="flex">
-      <div className="flex-shrink-0">
-        <XCircleIcon className="h-5 w-5 text-red-400" aria-hidden="true" />
-      </div>
-      <div className="ml-3">
-        <h3 className="text-sm font-medium text-red-800">Usuário ou senha incorretos</h3>
-  
+        </div>
       </div>
     </div>
-  </div>;
-    setTexto(novoTexto);
-  };
-
-  return (
-    <form onSubmit={handleEnviar}>
-      <button type="submit">Enviar</button>
-      <div>{texto}</div>
-    </form>
-  );
+  )
 }
-
-export default MeuComponente;
-
-
