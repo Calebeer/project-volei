@@ -47,7 +47,7 @@ import { log } from "console";
 export let action: ActionFunction = async({ request }) => { 
   const formData = await request.formData();
 
-  const cpf = formData.get("cpf") as string;
+  const cpf = formData.get("cpf_cliente") as string;
   const nome_remedio = formData.get("nome_remedio") as string;
   const quantidade = formData.get("quantidade") as string;
   
@@ -64,19 +64,19 @@ export let action: ActionFunction = async({ request }) => {
 
 
 export async function loader() { 
-    const cliente = await prisma.cliente.findMany()
+    const remedio = await prisma.farmacia.findMany()
     const primeiraVenda =  await prisma.venda.findFirst()
 
-    return json({cliente, primeiraVenda})
+    return json({remedio, primeiraVenda})
 }
 
 export default function Example() {
   
-   const {cliente, primeiraVenda} = useLoaderData<typeof loader>();
+   const {remedio, primeiraVenda} = useLoaderData<typeof loader>();
 
     return (
       <>
-      {cliente.at(0)?.cpf}
+    
 
       <input type="text" value={primeiraVenda?.nome_remedio} onChange={()=>{
         
@@ -101,15 +101,8 @@ export default function Example() {
                   Cpf do Cliente
                 </label>
                 <div className="mt-2">
-                <select name="cpf" id="">
-                    {
-                      cliente.map((cliente) => (
-                          <option value={cliente.cpf}>
-                            {cliente.cpf}
-                          </option>
-                      ))
-                    }
-                  </select>
+                <input name="cpf_cliente" type="text" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  />
                 </div>
               </div>
 
@@ -117,8 +110,15 @@ export default function Example() {
                   Nome do Remédio
                 </label>
                 <div className="mt-2">
-                  <input name="nome_remedio" type="text" className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  />
+                <select name="nome" id="">
+                    {
+                      remedio.map((cliente) => (
+                          <option value={cliente.nome}>
+                            {cliente.nome}
+                          </option>
+                      ))
+                    }
+                  </select>
                 </div>
               
   

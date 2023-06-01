@@ -2,6 +2,11 @@ import { ActionFunction, LoaderFunction } from "@remix-run/node";
 import { LoaderArgs, json } from "@remix-run/server-runtime";
 import { Form, useLoaderData } from "@remix-run/react"
 import { prisma } from "~/db.server";
+import { isRedirectResponse } from "@remix-run/react/dist/data";
+import { redirect } from "@remix-run/node"; 
+import { XCircleIcon } from "@heroicons/react/20/solid";
+
+
 
 export let action: ActionFunction = async({ request }) => { 
   const url = new URL(request.url);
@@ -11,6 +16,7 @@ export let action: ActionFunction = async({ request }) => {
 
   const usuario = formData.get("email") as string;
   const senha = formData.get("senha") as string;
+  const errado = formData.get("erro") as string ;
 
 
   const usuarioEncontrado = await prisma.user.findFirst({
@@ -22,7 +28,7 @@ export let action: ActionFunction = async({ request }) => {
 
   if(usuarioEncontrado){
     console.log('usuário encontrado', (usuarioEncontrado));
-    
+    return redirect("/venda");
   }else{
     console.log('usuário não encontrado');
     return {
@@ -45,8 +51,12 @@ export async function loader() {
   return json({cliente})
 }
 
+
+
+
 export default function Example() {
   
+
   const data = { error : 'Usuário ou senha incorretos.'}
         
   const usuario = {idade:22, nome:'Sóstenes'}
@@ -54,107 +64,28 @@ export default function Example() {
   const notas = [
     { titulo:'nota 1', corpo:'nota 1 testesa' },
     { titulo:'nota 2', corpo:'nota 2 testesa' },
-    { titulo:'nota 3', corpo:'nota 3 testesa' },
+    { titulo:'nota 3', corpo:'nota 3 testesa' }
   ]
 
+  
+
  const {cliente} = useLoaderData<typeof loader>();
- 
+
+
+ const alerta = <div className="rounded-md bg-red-50 p-4">
+  <div className="flex">
+    <div className="flex-shrink-0">
+      <XCircleIcon className="h-5 w-5 text-red-400" aria-hidden="true" />
+    </div>
+    <div className="ml-3">
+      <h3 className="text-sm font-medium text-red-800">Usuário ou senha incorretos</h3>
+
+    </div>
+  </div>
+</div>
   return (
     <>
-    remedios: {JSON.stringify(cliente)}
-      {'Calebe'} 
-      {1}
-      {[123,2,2,2][1]}
-      {
-
-        JSON.stringify({nome:'calebe', idade: 18})
-      
-      }
-      
-      {
-        {idade:22, nome:'Sóstenes'}.nome
-
-      }
-      
-      {
-        JSON.stringify(usuario)
-      }
-
-      <p>
-        {usuario.nome}
-      </p>
-
-      <h2 className="text-4xl">
-        {usuario.idade}
-      </h2>
-
-
-    <pre>
-          {
-            JSON.stringify(notas,null,2)
-          }
-    </pre>
-
-    <h1 className="text-4xl">
-    { notas[0].titulo }
-
-    </h1>
-        
-    <p>
-      {notas[0].corpo}
-    </p>
-
-    ......................
-    
-    {
-      notas.map((nota) =>(
-          <div> 
-            <h1 className="text-4xl">
-            {nota.titulo} 
-              </h1>
-            {/* <p>
-              {nota.corpo}
-            </p> */}
-          </div>
-        )
-      )
-    }
-
-
-    {
-      notas.map((nota,index) =>(
-        <div>
-          <p>
-            {nota.corpo} - {index}
-          </p>
-        </div>
-      ))
-    }
-
-
-
-
-
-    <select name="" id="">
-      {
-        cliente.map((clientes) => (
-            <option value="">
-              {clientes.cpf}
-            </option>
-        ))
-      }
-      
-    </select>
-
-
-
-
-
-
-
-
-
-
+  <div className="erro" ></div>
 
 
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
@@ -173,7 +104,7 @@ export default function Example() {
           <Form className="space-y-6" action="" method="POST">
             <div>
               <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
-                Nome
+                Usuário
               </label>
               <div className="mt-2">
                 <input
@@ -208,7 +139,7 @@ export default function Example() {
             </div>
 
             <div>
-              <button
+              <button 
                 type="submit"
                 className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
