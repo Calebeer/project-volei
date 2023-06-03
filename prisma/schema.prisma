@@ -7,33 +7,23 @@ generator client {
   provider = "prisma-client-js"
 }
 
-model farmacia{
-  id    Int    @id @default(autoincrement())
-  nome String
-  
-  preco String
-  quantidade String
-}
-
 model user{
   id Int @id @default(autoincrement())
-  usuario String @unique
-  senha String 
-  
+  name String 
+  address String 
+  telephone String @unique
+  email String @unique
+  password String @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
 }
 
-model cliente{
+model scheduling{
   id Int @id @default(autoincrement())
-  nome String 
-  cpf String @unique
-  endereco String
-  telefone String
+  name String
+  date DateTime @unique
+  hour DateTime @db.Time() @unique
 }
 
-model venda{
-  id Int @id @default(autoincrement())
-  cpf String @unique
-  nome_remedio String
-  quantidade String
-}
+
 

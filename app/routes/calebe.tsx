@@ -25,13 +25,9 @@ export let action: ActionFunction = async({ request }) => {
 
   console.log(usuarioEncontrado);
   
-
   if(usuarioEncontrado){
     console.log('usuário encontrado', (usuarioEncontrado));
     return redirect("/venda");
-    // return {
-    //   success:'Logado',
-    // }
   }else{
     console.log('usuário não encontrado');
     return {

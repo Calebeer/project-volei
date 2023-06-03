@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["browser-route-module:routes/erro.tsx?browser"],
-  "sourcesContent": ["export { default } from \"./routes/erro.tsx\";"],
-  "mappings": ";;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;",
-  "names": []
-}
