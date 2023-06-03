@@ -10,21 +10,24 @@ import { useState } from "react";
 import Navbar from "./navbar";
 
 export let action: ActionFunction = async({ request }) => { 
- 
+ //aqui ele está pegando todas as informacões do formulário
   const formData = await request.formData();
 
-  const usuario = formData.get("email") as string;
-  const senha = formData.get("senha") as string;
+  const user = formData.get("email") as string;
+  const password = formData.get("password") as string;
 
+
+  //aqui é feita a busca no banco de dados pra ver se tem o usuário no banco de dados
   const usuarioEncontrado = await prisma.user.findFirst({
     where:{
-      usuario: usuario,
-      senha: senha
+      email: user,
+      password: password
     }
   })
 
   console.log(usuarioEncontrado);
   
+  //Aqui é feita a validação, se o usuário for encontrado no banco ele vai conectar, se não for encontrado vai retornar a menagem 'Usuário ou senha incorretos'.
   if(usuarioEncontrado){
     console.log('usuário encontrado', (usuarioEncontrado));
     return redirect("/venda");
@@ -87,7 +90,7 @@ export default function Example() {
               <div className="mt-2">
                 <input
                   id="password"
-                  name="senha"
+                  name="password"
                   type="password"
                   autoComplete="current-password"
                   required

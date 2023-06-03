@@ -20,9 +20,9 @@ model user{
 
 model scheduling{
   id Int @id @default(autoincrement())
-  name String
-  date DateTime @unique
-  hour DateTime @db.Time() @unique
+  Ti String
+  user_ud   user @relation(fields: [authorId], references: [id])
+  datetime DateTime @unique
 }
 
 
