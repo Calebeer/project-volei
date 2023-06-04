@@ -7,23 +7,16 @@ generator client {
   provider = "prisma-client-js"
 }
 
-model user{
+model remedy_category {
   id Int @id @default(autoincrement())
-  name String 
-  address String 
-  telephone String @unique
-  email String @unique
-  password String @unique
-  createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
+  name String
+  remedies remedy[]
 }
 
-model scheduling{
+model remedy {
   id Int @id @default(autoincrement())
-  Ti String
-  user_ud   user @relation(fields: [authorId], references: [id])
-  datetime DateTime @unique
+  name String
+  category_id Int
+  category remedy_category @relation(fields: [category_id], references: [id])
 }
-
-
 
