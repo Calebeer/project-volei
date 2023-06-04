@@ -11,6 +11,17 @@ export let loader: LoaderFunction = async({ request }) => {
     const preco_remedio = queryParams.get('preco_remedio');
     const quantidade = queryParams.get('quantidade');
 
+    await prisma.user.create({
+      data:{
+        email:'calebe',
+        password:'8102',
+        name:'calebe',
+        address:'rua do cotovelo, 1030, canagalheiro',
+        telephone:'999882882'
+      }
+    })
+
+
     if(!nome_remedio){
         return{error:'Não foi fornecido um nome'}
     }

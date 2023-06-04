@@ -1,13 +1,17 @@
-import { ActionFunction } from "@remix-run/node"
+import { ActionFunction, redirect } from "@remix-run/node"
+import { useActionData } from "@remix-run/react";
 import { log } from "console";
 import { prisma } from "~/db.server";
+import ErrorMessage from "./erro";
 
 export let action: ActionFunction = async({ request }) => { 
   const formData = await request.formData();
 
   const email = formData.get("email") as string;
   const password = formData.get("password") as string;
+ 
 
+//AQUI ESTÁ SENDO FEITO A VALIDACÃO DO USUÁRIO, SE A SENHA ESTÁ CERTA OU NÃO.
   const userfound = await prisma.user.findFirst({
     where: {
       email:email,
@@ -15,14 +19,26 @@ export let action: ActionFunction = async({ request }) => {
     }
   })
 
+
+  //AQUI É FEITO O CAMINHO, CASO A O USUÁRIO SEJA ENCONTRADO ELE VAI ENTRAR NO SITE, CASO NÃO SEJA ENCONRTRADO VAI RETORNAR A MENSAGEM DE erro:'Email ou senha inválidos'
   if (userfound){
-    console.log();
-    
+    return redirect("/navbar");
+  }else{
+    console.log('Não encontrado');
+    return{
+      erro:'Não foi encontrado'
+    }
   }
 
 }
 
 export default function Login() {
+  
+
+  //AQUI ELE VAI ESTAR PEGANDO O QUE VAI RETORNAR A FUNÇÃO action.
+  const data = useActionData<typeof action>();
+  
+
   return (
     <>
 
@@ -47,6 +63,7 @@ export default function Login() {
               <div className="mt-2">
                 <input
                   id="email"
+                  placeholder="Email"
                   name="email"
                   type="email"
                   autoComplete="email"
@@ -70,6 +87,7 @@ export default function Login() {
               <div className="mt-2">
                 <input
                   id="password"
+                  placeholder="enha"
                   name="password"
                   type="password"
                   autoComplete="current-password"
@@ -86,12 +104,13 @@ export default function Login() {
               >
                 Entrar
               </button>
+              {data?.erro ? <ErrorMessage /> : ''}
             </div>
           </form>
 
           <p className="mt-10 text-center text-sm text-gray-500">
-            Não tem uma conta, faça já a sua?{' '}
-            <a href="#" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
+            Não tem uma conta? Crie agora a sua.{' '}
+            <a href="/createacount" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
               Criar conta
             </a>
           </p>
