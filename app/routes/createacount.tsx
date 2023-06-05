@@ -1,52 +1,50 @@
-import { LoaderFunction } from "@remix-run/node"
+import { ActionFunction, LoaderFunction } from "@remix-run/node"
+import { useActionData } from "@remix-run/react";
 import { prisma } from "~/db.server";
+import ErrorEmail from "./emailerror";
+import SuccessfullyEmail from "./successemail";
 
-export let loader: LoaderFunction = async({ request }) => { 
+export let action: ActionFunction = async({ request }) => { 
+    const formData = await request.formData();
+  
+    const name = formData.get("name") as string;
+    const address = formData.get("address") as string;
+    const email = formData.get("email") as string;
+    const password = formData.get("password") as string;
     
-    const url = new URL(request.url);
-    const queryParams = url.searchParams;
-    
-    
-    const name = queryParams.get("name") as string;
-    const address = queryParams.get("address") as string;
-    const email = queryParams.get("email") as string;
-    const password = queryParams.get("password") as string;
-
-
-    await prisma.user.create({
-      data:{
-        email:email,
-        password:password,
-        name:name,
-        address:address
+    const databaseResult = await prisma.user.findFirst({
+      where:{
+        email
       }
     })
 
+    console.log('achei:',databaseResult)
+    if(databaseResult){
+      return{
+        error:'email já cadastrado',
+      }
+    }
 
-   
-
-
-
-    // await prisma.user.create({
-    //   data:{
-    //     name:name,
-    //     address:address,
-    //     email:email,
-    //     password:password
-    //   }
-    // })
-   
-
+    await prisma.user.create({
+      data: {
+       name:name,
+       address:address,
+       email:email,
+       password:password
+      }
+    })
     
 
-    return {succes:true}
+    return {success:'email cadastrado com sucesso'}
 }
 
 
 export default function CreateAcount() {
-    return (
+    
+  const data = useActionData<typeof action>();
+
+  return (
       <>
-        
         <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
           <div className="sm:mx-auto sm:w-full sm:max-w-sm">
             <img
@@ -60,7 +58,7 @@ export default function CreateAcount() {
           </div>
   
           <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-            <form className="space-y-6" action="#" method="POST">
+            <form className="space-y-6" action="" method="post">
               <div>
                 <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
                   Nome Completo
@@ -125,21 +123,6 @@ export default function CreateAcount() {
                   />
                 </div>
               </div>
-              
-              {/* <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900 ">
-                  Confirme sua senha
-                </label>
-                <div className="mt-2">
-                  <input
-                    id="email"
-                    placeholder="Confirme sua senha"
-                    name="password2"
-                    type="password"
-                    autoComplete="email"
-                    required
-                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                  />
-                </div> */}
   
               <div>
                 <button
@@ -148,6 +131,8 @@ export default function CreateAcount() {
                 >
                   Cadastrar
                 </button>
+              {data?.error ? <ErrorEmail /> : ''}
+              {data?.success ? <SuccessfullyEmail /> : ''}
               </div>
             </form>
   
