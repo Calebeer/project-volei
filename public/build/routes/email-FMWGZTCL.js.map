@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:routes/email.tsx?browser", "../../../app/routes/email.tsx"],
+  "sourcesContent": ["export { default } from \"./routes/email.tsx\";", "import { LoaderFunction } from \"@remix-run/node\";\nimport { Link } from \"@remix-run/react\";\n\nexport const loader: LoaderFunction = async() =>{\n    return{};\n};\n\nexport default function Index(){\n    const loaderData = useLoaderData();\n\n    return(\n        <div>\n            <Link to={\"/new-item\"} >\n\n            </Link>\n        </div>\n    )\n}"],
+  "mappings": ";;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;;;ACAA;AAAA;AAAA;AAAA;AAAA;AAYY;AALG,SAAR,QAAwB;AAC3B,QAAM,aAAa,cAAc;AAEjC,SACI,mDAAC,SACG,6DAAC,QAAK,IAAI,eAAV;AAAA;AAAA;AAAA;AAAA,SAEA,KAHJ;AAAA;AAAA;AAAA;AAAA,SAIA;AAER;",
+  "names": []
+}

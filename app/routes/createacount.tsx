@@ -1,20 +1,45 @@
 import { LoaderFunction } from "@remix-run/node"
+import { prisma } from "~/db.server";
 
 export let loader: LoaderFunction = async({ request }) => { 
     
     const url = new URL(request.url);
     const queryParams = url.searchParams;
+    
+    
+    const name = queryParams.get("name") as string;
+    const address = queryParams.get("address") as string;
+    const email = queryParams.get("email") as string;
+    const password = queryParams.get("password") as string;
 
-    const name = queryParams.get("name");
-    const address = queryParams.get("address")
-    const email = queryParams.get("email")
-    const password = queryParams.get("password")
-    const password2 = queryParams.get("password2")
+
+    await prisma.user.create({
+      data:{
+        email:email,
+        password:password,
+        name:name,
+        address:address
+      }
+    })
+
+
+   
+
+
+
+    // await prisma.user.create({
+    //   data:{
+    //     name:name,
+    //     address:address,
+    //     email:email,
+    //     password:password
+    //   }
+    // })
+   
 
     
 
-
-    return 'a'
+    return {succes:true}
 }
 
 
@@ -101,7 +126,7 @@ export default function CreateAcount() {
                 </div>
               </div>
               
-              <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900 ">
+              {/* <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900 ">
                   Confirme sua senha
                 </label>
                 <div className="mt-2">
@@ -109,12 +134,12 @@ export default function CreateAcount() {
                     id="email"
                     placeholder="Confirme sua senha"
                     name="password2"
-                    type="text"
+                    type="password"
                     autoComplete="email"
                     required
                     className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
-                </div>
+                </div> */}
   
               <div>
                 <button
