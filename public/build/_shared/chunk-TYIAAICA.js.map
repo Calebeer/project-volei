@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/routes/emailerror.tsx"],
+  "sourcesContent": ["import { XCircleIcon } from \"@heroicons/react/20/solid\";\nimport React from \"react\";\n\nexport default function ErrorEmail(){\n  return(\n    <div className=\"rounded-md bg-red-50 p-4\">\n      <div className=\"flex\">\n        <div className=\"flex-shrink-0\">\n          <XCircleIcon className=\"h-5 w-5 text-red-400\" aria-hidden=\"true\" />\n        </div>\n        <div className=\"ml-3\">\n          <h3 className=\"text-sm font-medium text-red-800\">Email j\u00E1 cadastrado</h3>\n\n        </div>\n      </div>\n    </div>\n  )\n}"],
+  "mappings": ";;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAQU;AALK,SAAR,aAA6B;AAClC,SACE,mDAAC,SAAI,WAAU,4BACb,6DAAC,SAAI,WAAU,QACb;AAAA,uDAAC,SAAI,WAAU,iBACb,6DAAC,uBAAY,WAAU,wBAAuB,eAAY,UAA1D;AAAA;AAAA;AAAA;AAAA,WAAiE,KADnE;AAAA;AAAA;AAAA;AAAA,WAEA;AAAA,IACA,mDAAC,SAAI,WAAU,QACb,6DAAC,QAAG,WAAU,oCAAmC,sCAAjD;AAAA;AAAA;AAAA;AAAA,WAAoE,KADtE;AAAA;AAAA;AAAA;AAAA,WAGA;AAAA,OAPF;AAAA;AAAA;AAAA;AAAA,SAQA,KATF;AAAA;AAAA;AAAA;AAAA,SAUA;AAEJ;",
+  "names": []
+}

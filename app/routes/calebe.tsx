@@ -16,7 +16,6 @@ export let action: ActionFunction = async({ request }) => {
   const user = formData.get("email") as string;
   const password = formData.get("password") as string;
 
-
   //aqui é feita a busca no banco de dados pra ver se tem o usuário no banco de dados
   const usuarioEncontrado = await prisma.user.findFirst({
     where:{

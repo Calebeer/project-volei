@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["browser-route-module:routes/successemail.tsx?browser"],
+  "sourcesContent": ["export { default } from \"./routes/successemail.tsx\";"],
+  "mappings": ";;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;",
+  "names": []
+}

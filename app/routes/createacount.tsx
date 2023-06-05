@@ -3,36 +3,47 @@ import { useActionData } from "@remix-run/react";
 import { prisma } from "~/db.server";
 import ErrorEmail from "./emailerror";
 import SuccessfullyEmail from "./successemail";
+import ErrorPassword from "./errorpassword";
 
 export let action: ActionFunction = async({ request }) => { 
     const formData = await request.formData();
-  
+
     const name = formData.get("name") as string;
     const address = formData.get("address") as string;
     const email = formData.get("email") as string;
     const password = formData.get("password") as string;
-    
+    const password2 = formData.get("password2") as string;
+
     const databaseResult = await prisma.user.findFirst({
       where:{
         email
       }
     })
 
-    console.log('achei:',databaseResult)
     if(databaseResult){
       return{
         error:'email já cadastrado',
       }
     }
 
-    await prisma.user.create({
-      data: {
-       name:name,
-       address:address,
-       email:email,
-       password:password
+    if(password !== password2){
+      console.log('senhas diferentes');
+      return{
+        password_error:'senhas diferentes'
       }
-    })
+    }
+      
+    await prisma.user.create({
+        data: {
+         name:name,
+         address:address,
+         email:email,
+         password:password
+        }
+      })
+    
+
+    
     
 
     return {success:'email cadastrado com sucesso'}
@@ -103,6 +114,7 @@ export default function CreateAcount() {
                     className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
+                
               </div>
   
               <div>
@@ -122,9 +134,24 @@ export default function CreateAcount() {
                     className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                   />
                 </div>
+                <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900 ">
+                  Confirme sua senha
+                </label>
+                <div className="mt-2">
+                  <input
+                    id="email"
+                    placeholder="Digite a senha novamente"
+                    name="password2"
+                    type="password"
+                    autoComplete="email"
+                    required
+                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  />
+                </div>
               </div>
   
               <div>
+                
                 <button
                   type="submit"
                   className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
@@ -133,6 +160,7 @@ export default function CreateAcount() {
                 </button>
               {data?.error ? <ErrorEmail /> : ''}
               {data?.success ? <SuccessfullyEmail /> : ''}
+              {data?.password_error? <ErrorPassword /> : ''}
               </div>
             </form>
   

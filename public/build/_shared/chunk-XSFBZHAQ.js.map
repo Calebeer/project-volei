@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/routes/errorpassword.tsx"],
+  "sourcesContent": ["import { XCircleIcon } from \"@heroicons/react/20/solid\";\n\nexport default function ErrorPassword(){\n  return(\n    <div className=\"rounded-md bg-red-50 p-4\">\n      <div className=\"flex\">\n        <div className=\"flex-shrink-0\">\n          <XCircleIcon className=\"h-5 w-5 text-red-400\" aria-hidden=\"true\" />\n        </div>\n        <div className=\"ml-3\">\n          <h3 className=\"text-sm font-medium text-red-800\">Senhas digitadas diferentes, tente novamente</h3>\n\n        </div>\n      </div>\n    </div>\n  )\n}"],
+  "mappings": ";;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAOU;AALK,SAAR,gBAAgC;AACrC,SACE,mDAAC,SAAI,WAAU,4BACb,6DAAC,SAAI,WAAU,QACb;AAAA,uDAAC,SAAI,WAAU,iBACb,6DAAC,uBAAY,WAAU,wBAAuB,eAAY,UAA1D;AAAA;AAAA;AAAA;AAAA,WAAiE,KADnE;AAAA;AAAA;AAAA;AAAA,WAEA;AAAA,IACA,mDAAC,SAAI,WAAU,QACb,6DAAC,QAAG,WAAU,oCAAmC,4DAAjD;AAAA;AAAA;AAAA;AAAA,WAA6F,KAD/F;AAAA;AAAA;AAAA;AAAA,WAGA;AAAA,OAPF;AAAA;AAAA;AAAA;AAAA,SAQA,KATF;AAAA;AAAA;AAAA;AAAA,SAUA;AAEJ;",
+  "names": []
+}

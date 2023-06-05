@@ -87,7 +87,7 @@ export default function Login() {
               <div className="mt-2">
                 <input
                   id="password"
-                  placeholder="enha"
+                  placeholder="Senha"
                   name="password"
                   type="password"
                   autoComplete="current-password"
