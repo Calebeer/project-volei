@@ -1,6 +1,6 @@
 import {
   Example
-} from "/build/_shared/chunk-P44FSG36.js";
+} from "/build/_shared/chunk-YP54JXGT.js";
 import "/build/_shared/chunk-FFZXZXWH.js";
 import {
   require_db
@@ -227,4 +227,4 @@ function Example2() {
 export {
   Example2 as default
 };
-//# sourceMappingURL=/build/routes/login_cliente-GAIEBIFQ.js.map
+//# sourceMappingURL=/build/routes/login_cliente-TIXALTKW.js.map

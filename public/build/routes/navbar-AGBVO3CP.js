@@ -1,6 +1,6 @@
 import {
   Example
-} from "/build/_shared/chunk-P44FSG36.js";
+} from "/build/_shared/chunk-YP54JXGT.js";
 import "/build/_shared/chunk-FFZXZXWH.js";
 import "/build/_shared/chunk-RQ7GWW3B.js";
 import {
@@ -20,4 +20,4 @@ init_process();
 export {
   Example as default
 };
-//# sourceMappingURL=/build/routes/navbar-YPC2JND3.js.map
+//# sourceMappingURL=/build/routes/navbar-AGBVO3CP.js.map

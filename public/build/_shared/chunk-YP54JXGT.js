@@ -397,7 +397,7 @@ function Example() {
         columnNumber: 11
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("main", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "mx-auto max-w-7xl sm:px-6 lg:px-5", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "sm:col-span-3", children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("label", { htmlFor: "last-name", className: "block text-sm font-medium leading-6 text-gray-900", children: "Last name" }, void 0, false, {
+        /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("label", { htmlFor: "last-name", className: "block text-sm font-medium leading-6 text-gray-900", children: "Nome" }, void 0, false, {
           fileName: "app/routes/navbar.tsx",
           lineNumber: 197,
           columnNumber: 15
@@ -409,7 +409,7 @@ function Example() {
             name: "last-name",
             id: "last-name",
             autoComplete: "family-name",
-            className: "block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+            className: "block w- rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
           },
           void 0,
           false,
@@ -422,6 +422,33 @@ function Example() {
         ) }, void 0, false, {
           fileName: "app/routes/navbar.tsx",
           lineNumber: 200,
+          columnNumber: 15
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("label", { htmlFor: "last-name", className: "block text-sm font-medium leading-6 text-gray-900", children: "Dia" }, void 0, false, {
+          fileName: "app/routes/navbar.tsx",
+          lineNumber: 209,
+          columnNumber: 15
+        }, this),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "mt-2", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(
+          "input",
+          {
+            type: "datetime-local",
+            name: "last-name",
+            id: "last-name",
+            autoComplete: "family-name",
+            className: "block w- rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
+          },
+          void 0,
+          false,
+          {
+            fileName: "app/routes/navbar.tsx",
+            lineNumber: 213,
+            columnNumber: 17
+          },
+          this
+        ) }, void 0, false, {
+          fileName: "app/routes/navbar.tsx",
+          lineNumber: 212,
           columnNumber: 15
         }, this)
       ] }, void 0, true, {
@@ -456,4 +483,4 @@ function Example() {
 export {
   Example
 };
-//# sourceMappingURL=/build/_shared/chunk-P44FSG36.js.map
+//# sourceMappingURL=/build/_shared/chunk-YP54JXGT.js.map

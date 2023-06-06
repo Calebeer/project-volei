@@ -195,7 +195,7 @@ export default function Example() {
           <main>
             <div className="mx-auto max-w-7xl sm:px-6 lg:px-5"><div className="sm:col-span-3">
               <label htmlFor="last-name" className="block text-sm font-medium leading-6 text-gray-900">
-                Last name
+                Nome
               </label>
               <div className="mt-2">
                 <input
@@ -203,7 +203,19 @@ export default function Example() {
                   name="last-name"
                   id="last-name"
                   autoComplete="family-name"
-                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  className="block w- rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
+                />
+              </div>
+              <label htmlFor="last-name" className="block text-sm font-medium leading-6 text-gray-900">
+                Dia
+              </label>
+              <div className="mt-2">
+                <input
+                  type="datetime-local"
+                  name="last-name"
+                  id="last-name"
+                  autoComplete="family-name"
+                  className="block w- rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
                 />
               </div>
             </div></div>

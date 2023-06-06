@@ -1,6 +1,6 @@
 import {
   Example
-} from "/build/_shared/chunk-P44FSG36.js";
+} from "/build/_shared/chunk-YP54JXGT.js";
 import "/build/_shared/chunk-FFZXZXWH.js";
 import {
   require_jsx_dev_runtime
@@ -168,4 +168,4 @@ function Example2() {
 export {
   Example2 as default
 };
-//# sourceMappingURL=/build/routes/cadastro_reme-ORL3LURI.js.map
+//# sourceMappingURL=/build/routes/cadastro_reme-63FGZLTJ.js.map

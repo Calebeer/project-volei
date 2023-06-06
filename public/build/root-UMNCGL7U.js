@@ -49,7 +49,7 @@ var cssBundleHref = updatedHref || assetsManifest.cssBundleHref;
 var import_session = __toESM(require_session());
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-VM5NM6PK.css";
+var tailwind_default = "/build/_assets/tailwind-22WNETBQ.css";
 
 // app/root.tsx
 var import_jsx_dev_runtime = __toESM(require_jsx_dev_runtime());
@@ -135,4 +135,4 @@ export {
    * @license MIT
    *)
 */
-//# sourceMappingURL=/build/root-74VNYM7E.js.map
+//# sourceMappingURL=/build/root-UMNCGL7U.js.map
