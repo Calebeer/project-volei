@@ -1,6 +1,28 @@
+export let action: ActionFunction = async({ request }) => { 
+  const formData = await request.formData();
+
+  const name = formData.get("name") as string;
+  const date = formData.get("date") as string;
+  const time = formData.get("time") as string;
+
+  const dados = await prisma.scheduling.create({
+    data: {
+      name:name,
+      date:date,
+      time:time
+    }
+  })
+
+  console.log(dados)
+
+  return 'asda'
+}
+
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { ActionFunction, LoaderFunction } from '@remix-run/node'
+import { prisma } from '~/db.server';
 
 const user = {
   name: 'Tom Cook',
@@ -24,7 +46,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function Navbar() {
   return (
     <>
       {/*
@@ -193,32 +215,58 @@ export default function Example() {
             </div>
           </header>
           <main>
+            <form action="" method="post">
             <div className="mx-auto max-w-7xl sm:px-6 lg:px-5"><div className="sm:col-span-3">
-              <label htmlFor="last-name" className="block text-sm font-medium leading-6 text-gray-900">
-                Nome
+              <label htmlFor="last-name" className="block text-sm font-medium leading-6 text-gray-900 pt-8">
+                Nome : 
               </label>
+              
               <div className="mt-2">
                 <input
                   type="text"
-                  name="last-name"
+                  placeholder='Digite seu nome'
+                  name="name"
+                  id="last-name"
+                  autoComplete="family-name"
+                  className="block w-1/2 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
+                />
+                
+              </div>
+              <label htmlFor="last-name" className="block text-sm font-medium leading-6 text-gray-900">
+                Dia :
+              </label>
+              <div className="mt-2">
+                <input
+                  type="date"
+                  name="date"
                   id="last-name"
                   autoComplete="family-name"
                   className="block w- rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
                 />
               </div>
               <label htmlFor="last-name" className="block text-sm font-medium leading-6 text-gray-900">
-                Dia
+                Hora : 
               </label>
               <div className="mt-2">
                 <input
-                  type="datetime-local"
-                  name="last-name"
+                  type="time"
+                  name="time"
                   id="last-name"
                   autoComplete="family-name"
                   className="block w- rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
                 />
               </div>
+              <div className='pt-4' >
+              <button
+                type="submit"
+                className="flex w-1/2 justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Agendar
+              </button>
+              </div>
             </div></div>
+            </form>
+            
           </main>
         </div>
       </div>

@@ -33,7 +33,7 @@ export let action: ActionFunction = async({ request }) => {
       }
     }
       
-    await prisma.user.create({
+    const cria = await prisma.user.create({
         data: {
          name:name,
          address:address,
@@ -42,7 +42,7 @@ export let action: ActionFunction = async({ request }) => {
         }
       })
     
-
+      console.log(cria)
     
     
 

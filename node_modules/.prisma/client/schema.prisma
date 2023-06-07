@@ -13,14 +13,14 @@ model User {
   address    String
   email      String       @unique
   password   String
-  Scheduling Scheduling[]
+  // Scheduling Scheduling[]
 }
 
 model Scheduling {
   id     Int      @id @default(autoincrement())
   name   String
-  user   User     @relation(fields: [userId], references: [id])
-  userId Int
+  // user   User     @relation(fields: [userId], references: [id])
+  // userId Int
   date   DateTime
   time   DateTime
 }
