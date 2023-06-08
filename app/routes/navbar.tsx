@@ -5,7 +5,7 @@ export let action: ActionFunction = async({ request }) => {
   const date = formData.get("date") as string;
   const time = formData.get("time") as string;
 
-  const dados = await prisma.scheduling.create({
+ await prisma.scheduling.create({
     data: {
       name:name,
       date:date,
@@ -13,9 +13,7 @@ export let action: ActionFunction = async({ request }) => {
     }
   })
 
-  console.log(dados)
-
-  return 'asda'
+  
 }
 
 import { Fragment } from 'react'

@@ -67,7 +67,7 @@ function Navbar() {
               false,
               {
                 fileName: "app/routes/navbar.tsx",
-                lineNumber: 68,
+                lineNumber: 66,
                 columnNumber: 23
               },
               this
@@ -83,14 +83,14 @@ function Navbar() {
               false,
               {
                 fileName: "app/routes/navbar.tsx",
-                lineNumber: 73,
+                lineNumber: 71,
                 columnNumber: 23
               },
               this
             )
           ] }, void 0, true, {
             fileName: "app/routes/navbar.tsx",
-            lineNumber: 67,
+            lineNumber: 65,
             columnNumber: 21
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8", children: navigation.map((item) => /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(
@@ -108,18 +108,18 @@ function Navbar() {
             false,
             {
               fileName: "app/routes/navbar.tsx",
-              lineNumber: 81,
+              lineNumber: 79,
               columnNumber: 25
             },
             this
           )) }, void 0, false, {
             fileName: "app/routes/navbar.tsx",
-            lineNumber: 79,
+            lineNumber: 77,
             columnNumber: 21
           }, this)
         ] }, void 0, true, {
           fileName: "app/routes/navbar.tsx",
-          lineNumber: 66,
+          lineNumber: 64,
           columnNumber: 19
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "hidden sm:ml-6 sm:flex sm:items-center", children: [
@@ -131,12 +131,12 @@ function Navbar() {
               children: [
                 /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", { className: "sr-only", children: "View notifications" }, void 0, false, {
                   fileName: "app/routes/navbar.tsx",
-                  lineNumber: 102,
+                  lineNumber: 100,
                   columnNumber: 23
                 }, this),
                 /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(BellIcon_default, { className: "h-6 w-6", "aria-hidden": "true" }, void 0, false, {
                   fileName: "app/routes/navbar.tsx",
-                  lineNumber: 103,
+                  lineNumber: 101,
                   columnNumber: 23
                 }, this)
               ]
@@ -145,7 +145,7 @@ function Navbar() {
             true,
             {
               fileName: "app/routes/navbar.tsx",
-              lineNumber: 98,
+              lineNumber: 96,
               columnNumber: 21
             },
             this
@@ -154,21 +154,21 @@ function Navbar() {
             /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(ot.Button, { className: "flex max-w-xs items-center rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2", children: [
               /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", { className: "sr-only", children: "Open user menu" }, void 0, false, {
                 fileName: "app/routes/navbar.tsx",
-                lineNumber: 110,
+                lineNumber: 108,
                 columnNumber: 27
               }, this),
               /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("img", { className: "h-8 w-8 rounded-full", src: user.imageUrl, alt: "" }, void 0, false, {
                 fileName: "app/routes/navbar.tsx",
-                lineNumber: 111,
+                lineNumber: 109,
                 columnNumber: 27
               }, this)
             ] }, void 0, true, {
               fileName: "app/routes/navbar.tsx",
-              lineNumber: 109,
+              lineNumber: 107,
               columnNumber: 25
             }, this) }, void 0, false, {
               fileName: "app/routes/navbar.tsx",
-              lineNumber: 108,
+              lineNumber: 106,
               columnNumber: 23
             }, this),
             /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(
@@ -195,17 +195,17 @@ function Navbar() {
                   false,
                   {
                     fileName: "app/routes/navbar.tsx",
-                    lineNumber: 127,
+                    lineNumber: 125,
                     columnNumber: 33
                   },
                   this
                 ) }, item.name, false, {
                   fileName: "app/routes/navbar.tsx",
-                  lineNumber: 125,
+                  lineNumber: 123,
                   columnNumber: 29
                 }, this)) }, void 0, false, {
                   fileName: "app/routes/navbar.tsx",
-                  lineNumber: 123,
+                  lineNumber: 121,
                   columnNumber: 25
                 }, this)
               },
@@ -213,52 +213,52 @@ function Navbar() {
               false,
               {
                 fileName: "app/routes/navbar.tsx",
-                lineNumber: 114,
+                lineNumber: 112,
                 columnNumber: 23
               },
               this
             )
           ] }, void 0, true, {
             fileName: "app/routes/navbar.tsx",
-            lineNumber: 107,
+            lineNumber: 105,
             columnNumber: 21
           }, this)
         ] }, void 0, true, {
           fileName: "app/routes/navbar.tsx",
-          lineNumber: 97,
+          lineNumber: 95,
           columnNumber: 19
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "-mr-2 flex items-center sm:hidden", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(ve.Button, { className: "inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2", children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", { className: "sr-only", children: "Open main menu" }, void 0, false, {
             fileName: "app/routes/navbar.tsx",
-            lineNumber: 146,
+            lineNumber: 144,
             columnNumber: 23
           }, this),
           open ? /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(XMarkIcon_default, { className: "block h-6 w-6", "aria-hidden": "true" }, void 0, false, {
             fileName: "app/routes/navbar.tsx",
-            lineNumber: 148,
+            lineNumber: 146,
             columnNumber: 25
           }, this) : /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Bars3Icon_default, { className: "block h-6 w-6", "aria-hidden": "true" }, void 0, false, {
             fileName: "app/routes/navbar.tsx",
-            lineNumber: 150,
+            lineNumber: 148,
             columnNumber: 25
           }, this)
         ] }, void 0, true, {
           fileName: "app/routes/navbar.tsx",
-          lineNumber: 145,
+          lineNumber: 143,
           columnNumber: 21
         }, this) }, void 0, false, {
           fileName: "app/routes/navbar.tsx",
-          lineNumber: 143,
+          lineNumber: 141,
           columnNumber: 19
         }, this)
       ] }, void 0, true, {
         fileName: "app/routes/navbar.tsx",
-        lineNumber: 65,
+        lineNumber: 63,
         columnNumber: 17
       }, this) }, void 0, false, {
         fileName: "app/routes/navbar.tsx",
-        lineNumber: 64,
+        lineNumber: 62,
         columnNumber: 15
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(ve.Panel, { className: "sm:hidden", children: [
@@ -278,40 +278,40 @@ function Navbar() {
           false,
           {
             fileName: "app/routes/navbar.tsx",
-            lineNumber: 160,
+            lineNumber: 158,
             columnNumber: 21
           },
           this
         )) }, void 0, false, {
           fileName: "app/routes/navbar.tsx",
-          lineNumber: 158,
+          lineNumber: 156,
           columnNumber: 17
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "border-t border-gray-200 pb-3 pt-4", children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "flex items-center px-4", children: [
             /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "flex-shrink-0", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("img", { className: "h-10 w-10 rounded-full", src: user.imageUrl, alt: "" }, void 0, false, {
               fileName: "app/routes/navbar.tsx",
-              lineNumber: 179,
+              lineNumber: 177,
               columnNumber: 23
             }, this) }, void 0, false, {
               fileName: "app/routes/navbar.tsx",
-              lineNumber: 178,
+              lineNumber: 176,
               columnNumber: 21
             }, this),
             /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "ml-3", children: [
               /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "text-base font-medium text-gray-800", children: user.name }, void 0, false, {
                 fileName: "app/routes/navbar.tsx",
-                lineNumber: 182,
+                lineNumber: 180,
                 columnNumber: 23
               }, this),
               /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "text-sm font-medium text-gray-500", children: user.email }, void 0, false, {
                 fileName: "app/routes/navbar.tsx",
-                lineNumber: 183,
+                lineNumber: 181,
                 columnNumber: 23
               }, this)
             ] }, void 0, true, {
               fileName: "app/routes/navbar.tsx",
-              lineNumber: 181,
+              lineNumber: 179,
               columnNumber: 21
             }, this),
             /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(
@@ -322,12 +322,12 @@ function Navbar() {
                 children: [
                   /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("span", { className: "sr-only", children: "View notifications" }, void 0, false, {
                     fileName: "app/routes/navbar.tsx",
-                    lineNumber: 189,
+                    lineNumber: 187,
                     columnNumber: 23
                   }, this),
                   /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(BellIcon_default, { className: "h-6 w-6", "aria-hidden": "true" }, void 0, false, {
                     fileName: "app/routes/navbar.tsx",
-                    lineNumber: 190,
+                    lineNumber: 188,
                     columnNumber: 23
                   }, this)
                 ]
@@ -336,14 +336,14 @@ function Navbar() {
               true,
               {
                 fileName: "app/routes/navbar.tsx",
-                lineNumber: 185,
+                lineNumber: 183,
                 columnNumber: 21
               },
               this
             )
           ] }, void 0, true, {
             fileName: "app/routes/navbar.tsx",
-            lineNumber: 177,
+            lineNumber: 175,
             columnNumber: 19
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "mt-3 space-y-1", children: userNavigation.map((item) => /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(
@@ -358,52 +358,52 @@ function Navbar() {
             false,
             {
               fileName: "app/routes/navbar.tsx",
-              lineNumber: 195,
+              lineNumber: 193,
               columnNumber: 23
             },
             this
           )) }, void 0, false, {
             fileName: "app/routes/navbar.tsx",
-            lineNumber: 193,
+            lineNumber: 191,
             columnNumber: 19
           }, this)
         ] }, void 0, true, {
           fileName: "app/routes/navbar.tsx",
-          lineNumber: 176,
+          lineNumber: 174,
           columnNumber: 17
         }, this)
       ] }, void 0, true, {
         fileName: "app/routes/navbar.tsx",
-        lineNumber: 157,
+        lineNumber: 155,
         columnNumber: 15
       }, this)
     ] }, void 0, true, {
       fileName: "app/routes/navbar.tsx",
-      lineNumber: 63,
+      lineNumber: 61,
       columnNumber: 13
     }, this) }, void 0, false, {
       fileName: "app/routes/navbar.tsx",
-      lineNumber: 61,
+      lineNumber: 59,
       columnNumber: 9
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "py-10", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("header", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "mx-auto max-w-7xl px-4 sm:px-6 lg:px-8", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("h1", { className: "text-3xl font-bold leading-tight tracking-tight text-gray-900", children: "Fa\xE7a seu agendamento aqui" }, void 0, false, {
         fileName: "app/routes/navbar.tsx",
-        lineNumber: 214,
+        lineNumber: 212,
         columnNumber: 15
       }, this) }, void 0, false, {
         fileName: "app/routes/navbar.tsx",
-        lineNumber: 213,
+        lineNumber: 211,
         columnNumber: 13
       }, this) }, void 0, false, {
         fileName: "app/routes/navbar.tsx",
-        lineNumber: 212,
+        lineNumber: 210,
         columnNumber: 11
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("main", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("form", { action: "", method: "post", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "mx-auto max-w-7xl sm:px-6 lg:px-5", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "sm:col-span-3", children: [
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("label", { htmlFor: "last-name", className: "block text-sm font-medium leading-6 text-gray-900 pt-8", children: "Nome :" }, void 0, false, {
           fileName: "app/routes/navbar.tsx",
-          lineNumber: 220,
+          lineNumber: 218,
           columnNumber: 15
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "mt-2", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(
@@ -420,18 +420,18 @@ function Navbar() {
           false,
           {
             fileName: "app/routes/navbar.tsx",
-            lineNumber: 225,
+            lineNumber: 223,
             columnNumber: 17
           },
           this
         ) }, void 0, false, {
           fileName: "app/routes/navbar.tsx",
-          lineNumber: 224,
+          lineNumber: 222,
           columnNumber: 15
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("label", { htmlFor: "last-name", className: "block text-sm font-medium leading-6 text-gray-900", children: "Dia :" }, void 0, false, {
           fileName: "app/routes/navbar.tsx",
-          lineNumber: 235,
+          lineNumber: 233,
           columnNumber: 15
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "mt-2", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(
@@ -447,18 +447,18 @@ function Navbar() {
           false,
           {
             fileName: "app/routes/navbar.tsx",
-            lineNumber: 239,
+            lineNumber: 237,
             columnNumber: 17
           },
           this
         ) }, void 0, false, {
           fileName: "app/routes/navbar.tsx",
-          lineNumber: 238,
+          lineNumber: 236,
           columnNumber: 15
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("label", { htmlFor: "last-name", className: "block text-sm font-medium leading-6 text-gray-900", children: "Hora :" }, void 0, false, {
           fileName: "app/routes/navbar.tsx",
-          lineNumber: 247,
+          lineNumber: 245,
           columnNumber: 15
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "mt-2", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(
@@ -474,13 +474,13 @@ function Navbar() {
           false,
           {
             fileName: "app/routes/navbar.tsx",
-            lineNumber: 251,
+            lineNumber: 249,
             columnNumber: 17
           },
           this
         ) }, void 0, false, {
           fileName: "app/routes/navbar.tsx",
-          lineNumber: 250,
+          lineNumber: 248,
           columnNumber: 15
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "pt-4", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(
@@ -494,44 +494,44 @@ function Navbar() {
           false,
           {
             fileName: "app/routes/navbar.tsx",
-            lineNumber: 260,
+            lineNumber: 258,
             columnNumber: 15
           },
           this
         ) }, void 0, false, {
           fileName: "app/routes/navbar.tsx",
-          lineNumber: 259,
+          lineNumber: 257,
           columnNumber: 15
         }, this)
       ] }, void 0, true, {
         fileName: "app/routes/navbar.tsx",
-        lineNumber: 219,
+        lineNumber: 217,
         columnNumber: 64
       }, this) }, void 0, false, {
         fileName: "app/routes/navbar.tsx",
-        lineNumber: 219,
-        columnNumber: 13
-      }, this) }, void 0, false, {
-        fileName: "app/routes/navbar.tsx",
-        lineNumber: 218,
-        columnNumber: 13
-      }, this) }, void 0, false, {
-        fileName: "app/routes/navbar.tsx",
         lineNumber: 217,
+        columnNumber: 13
+      }, this) }, void 0, false, {
+        fileName: "app/routes/navbar.tsx",
+        lineNumber: 216,
+        columnNumber: 13
+      }, this) }, void 0, false, {
+        fileName: "app/routes/navbar.tsx",
+        lineNumber: 215,
         columnNumber: 11
       }, this)
     ] }, void 0, true, {
       fileName: "app/routes/navbar.tsx",
-      lineNumber: 211,
+      lineNumber: 209,
       columnNumber: 9
     }, this)
   ] }, void 0, true, {
     fileName: "app/routes/navbar.tsx",
-    lineNumber: 60,
+    lineNumber: 58,
     columnNumber: 7
   }, this) }, void 0, false, {
     fileName: "app/routes/navbar.tsx",
-    lineNumber: 51,
+    lineNumber: 49,
     columnNumber: 5
   }, this);
 }
@@ -539,4 +539,4 @@ function Navbar() {
 export {
   Navbar
 };
-//# sourceMappingURL=/build/_shared/chunk-KLWAPGJI.js.map
+//# sourceMappingURL=/build/_shared/chunk-2L37REZV.js.map
