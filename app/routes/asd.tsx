@@ -8,20 +8,15 @@ export let action: ActionFunction = async({ request }) => {
     const date = formData.get('date') as string;
     const time = formData.get('time') as string;
 
-    const a = prisma.scheduling.create({
+     const a = await prisma.scheduling.create({
         data: {
-          name: 'dasdas',
-          date: '2023-06-10',
-          time: '23:03' // Corrected time value in the expected format
+          name: name,   
+          date: date,
+          time: time
         }
       })
-        .then(result => {
-          // Handle successful creation
-        })
-        .catch(error => {
-          // Handle error
-        });
-        console.log(a)
+       
+      console.log(a)
         return 'a'
 }
 

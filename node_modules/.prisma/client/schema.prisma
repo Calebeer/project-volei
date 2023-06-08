@@ -21,8 +21,7 @@ model Scheduling {
   name   String
   // user   User     @relation(fields: [userId], references: [id])
   // userId Int
-  date   DateTime
-  time   DateTime
+  datetime   DateTime
 }
 
 // model remedy_category {

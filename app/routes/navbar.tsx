@@ -4,16 +4,17 @@ export let action: ActionFunction = async({ request }) => {
   const name = formData.get("name") as string;
   const date = formData.get("date") as string;
   const time = formData.get("time") as string;
-
- await prisma.scheduling.create({
+  
+  console.log(date, time);
+  
+  await prisma.scheduling.create({
     data: {
       name:name,
-      date:date,
-      time:time
+      datetime: new Date(`${date} ${time}`),
     }
   })
 
-  
+  return {}
 }
 
 import { Fragment } from 'react'
@@ -40,7 +41,7 @@ const userNavigation = [
   { name: 'Sign out', href: '#' },
 ]
 
-function classNames(...classes) {
+function classNames(...classes: any) {
   return classes.filter(Boolean).join(' ')
 }
 
@@ -246,13 +247,45 @@ export default function Navbar() {
                 Hora : 
               </label>
               <div className="mt-2">
+
+                <select 
+                  name="time" 
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6"
+                >
+                  {
+                    [
+                     '08:00',
+                     '09:00',
+                     '10:00',
+                     '11:00',
+                     '12:00',
+                     '13:00',
+                     '14:00',
+                     '15:00',
+                     '16:00',
+                     '17:00',
+                     '18:00',
+                     '19:00',
+                     '20:00',
+                     '21:00',
+                     '22:00',
+                     '23:00'
+                    ].map((time)=>
+                    <option value={time}>
+                      {time}
+                    </option>
+                  )}
+                </select>
+                
+{/*                 
                 <input
                   type="time"
                   name="time"
                   id="last-name"
+                  step="3600"
                   autoComplete="family-name"
                   className="block w- rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
-                />
+                /> */}
               </div>
               <div className='pt-4' >
               <button
