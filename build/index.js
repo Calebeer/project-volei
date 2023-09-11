@@ -34,7 +34,7 @@ __export(assets_manifest_exports, {
 });
 var assets_manifest_default, init_assets_manifest = __esm({
   "server-assets-manifest:@remix-run/dev/assets-manifest"() {
-    assets_manifest_default = { version: "309730e8", entry: { module: "/build/entry.client-SSGQIT7U.js", imports: ["/build/_shared/chunk-FNWMAQCD.js", "/build/_shared/chunk-RQ7GWW3B.js", "/build/_shared/chunk-DG4HR4CT.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-QVPQZEED.js", imports: ["/build/_shared/chunk-5B6WUN7S.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/asd": { id: "routes/asd", parentId: "root", path: "asd", index: void 0, caseSensitive: void 0, module: "/build/routes/asd-6I6L2CLI.js", imports: ["/build/_shared/chunk-KW6WLGT6.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/cadastro_reme": { id: "routes/cadastro_reme", parentId: "root", path: "cadastro_reme", index: void 0, caseSensitive: void 0, module: "/build/routes/cadastro_reme-6OPNONJ6.js", imports: ["/build/_shared/chunk-CCWRKC7U.js", "/build/_shared/chunk-FFZXZXWH.js", "/build/_shared/chunk-KW6WLGT6.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/calebe": { id: "routes/calebe", parentId: "root", path: "calebe", index: void 0, caseSensitive: void 0, module: "/build/routes/calebe-GLY6CKQL.js", imports: ["/build/_shared/chunk-QSTAXA6X.js", "/build/_shared/chunk-S3N74YNX.js", "/build/_shared/chunk-KW6WLGT6.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/cookie.server": { id: "routes/cookie.server", parentId: "root", path: "cookie/server", index: void 0, caseSensitive: void 0, module: "/build/routes/cookie.server-DIVTWPGL.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/createacount": { id: "routes/createacount", parentId: "root", path: "createacount", index: void 0, caseSensitive: void 0, module: "/build/routes/createacount-2Q2CETWS.js", imports: ["/build/_shared/chunk-DRB32KNV.js", "/build/_shared/chunk-TYIAAICA.js", "/build/_shared/chunk-XSFBZHAQ.js", "/build/_shared/chunk-S3N74YNX.js", "/build/_shared/chunk-KW6WLGT6.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/email": { id: "routes/email", parentId: "root", path: "email", index: void 0, caseSensitive: void 0, module: "/build/routes/email-AJGMOHBY.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/emailerror": { id: "routes/emailerror", parentId: "root", path: "emailerror", index: void 0, caseSensitive: void 0, module: "/build/routes/emailerror-XOWYTXGT.js", imports: ["/build/_shared/chunk-TYIAAICA.js", "/build/_shared/chunk-S3N74YNX.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/erro": { id: "routes/erro", parentId: "root", path: "erro", index: void 0, caseSensitive: void 0, module: "/build/routes/erro-NQR72D5U.js", imports: ["/build/_shared/chunk-QSTAXA6X.js", "/build/_shared/chunk-S3N74YNX.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/errorpassword": { id: "routes/errorpassword", parentId: "root", path: "errorpassword", index: void 0, caseSensitive: void 0, module: "/build/routes/errorpassword-LALPPX2Z.js", imports: ["/build/_shared/chunk-XSFBZHAQ.js", "/build/_shared/chunk-S3N74YNX.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/join": { id: "routes/join", parentId: "root", path: "join", index: void 0, caseSensitive: void 0, module: "/build/routes/join-4EUEKWEI.js", imports: ["/build/_shared/chunk-42QKJIDW.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/login": { id: "routes/login", parentId: "root", path: "login", index: void 0, caseSensitive: void 0, module: "/build/routes/login-MNBWJONS.js", imports: ["/build/_shared/chunk-QSTAXA6X.js", "/build/_shared/chunk-S3N74YNX.js", "/build/_shared/chunk-KW6WLGT6.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/login_cliente": { id: "routes/login_cliente", parentId: "root", path: "login_cliente", index: void 0, caseSensitive: void 0, module: "/build/routes/login_cliente-R2OWVG5S.js", imports: ["/build/_shared/chunk-CCWRKC7U.js", "/build/_shared/chunk-FFZXZXWH.js", "/build/_shared/chunk-KW6WLGT6.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/navbar": { id: "routes/navbar", parentId: "root", path: "navbar", index: void 0, caseSensitive: void 0, module: "/build/routes/navbar-FO7LBMN3.js", imports: ["/build/_shared/chunk-CCWRKC7U.js", "/build/_shared/chunk-FFZXZXWH.js", "/build/_shared/chunk-KW6WLGT6.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/notes": { id: "routes/notes", parentId: "root", path: "notes", index: void 0, caseSensitive: void 0, module: "/build/routes/notes-NGL22VWH.js", imports: ["/build/_shared/chunk-42QKJIDW.js", "/build/_shared/chunk-AC7UQQEL.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/notes.$noteId": { id: "routes/notes.$noteId", parentId: "routes/notes", path: ":noteId", index: void 0, caseSensitive: void 0, module: "/build/routes/notes.$noteId-35FUXSHC.js", imports: ["/build/_shared/chunk-5B6WUN7S.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/notes._index": { id: "routes/notes._index", parentId: "routes/notes", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/notes._index-IM26THV6.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/notes.new": { id: "routes/notes.new", parentId: "routes/notes", path: "new", index: void 0, caseSensitive: void 0, module: "/build/routes/notes.new-CSFPX4VP.js", imports: ["/build/_shared/chunk-5B6WUN7S.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/root": { id: "routes/root", parentId: "root", path: "root", index: void 0, caseSensitive: void 0, module: "/build/routes/root-EZRNH4KT.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/successemail": { id: "routes/successemail", parentId: "root", path: "successemail", index: void 0, caseSensitive: void 0, module: "/build/routes/successemail-7BCDQ57J.js", imports: ["/build/_shared/chunk-DRB32KNV.js", "/build/_shared/chunk-S3N74YNX.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/venda": { id: "routes/venda", parentId: "root", path: "venda", index: void 0, caseSensitive: void 0, module: "/build/routes/venda-APSWMAFP.js", imports: ["/build/_shared/chunk-FFZXZXWH.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, hmr: void 0, url: "/build/manifest-309730E8.js" };
+    assets_manifest_default = { version: "daf88dd0", entry: { module: "/build/entry.client-CMNCWDN6.js", imports: ["/build/_shared/chunk-2DL5WXA5.js", "/build/_shared/chunk-RQ7GWW3B.js", "/build/_shared/chunk-DG4HR4CT.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-VZBMQ2DS.js", imports: ["/build/_shared/chunk-5B6WUN7S.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/asd": { id: "routes/asd", parentId: "root", path: "asd", index: void 0, caseSensitive: void 0, module: "/build/routes/asd-6I6L2CLI.js", imports: ["/build/_shared/chunk-KW6WLGT6.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/cadastro_reme": { id: "routes/cadastro_reme", parentId: "root", path: "cadastro_reme", index: void 0, caseSensitive: void 0, module: "/build/routes/cadastro_reme-6OPNONJ6.js", imports: ["/build/_shared/chunk-CCWRKC7U.js", "/build/_shared/chunk-FFZXZXWH.js", "/build/_shared/chunk-KW6WLGT6.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/calebe": { id: "routes/calebe", parentId: "root", path: "calebe", index: void 0, caseSensitive: void 0, module: "/build/routes/calebe-R4E4WLBI.js", imports: ["/build/_shared/chunk-QSTAXA6X.js", "/build/_shared/chunk-S3N74YNX.js", "/build/_shared/chunk-KW6WLGT6.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/cookie.server": { id: "routes/cookie.server", parentId: "root", path: "cookie/server", index: void 0, caseSensitive: void 0, module: "/build/routes/cookie.server-DIVTWPGL.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/createacount": { id: "routes/createacount", parentId: "root", path: "createacount", index: void 0, caseSensitive: void 0, module: "/build/routes/createacount-RFCE4TVP.js", imports: ["/build/_shared/chunk-DRB32KNV.js", "/build/_shared/chunk-TYIAAICA.js", "/build/_shared/chunk-XSFBZHAQ.js", "/build/_shared/chunk-S3N74YNX.js", "/build/_shared/chunk-KW6WLGT6.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/email": { id: "routes/email", parentId: "root", path: "email", index: void 0, caseSensitive: void 0, module: "/build/routes/email-AJGMOHBY.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/emailerror": { id: "routes/emailerror", parentId: "root", path: "emailerror", index: void 0, caseSensitive: void 0, module: "/build/routes/emailerror-XOWYTXGT.js", imports: ["/build/_shared/chunk-TYIAAICA.js", "/build/_shared/chunk-S3N74YNX.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/erro": { id: "routes/erro", parentId: "root", path: "erro", index: void 0, caseSensitive: void 0, module: "/build/routes/erro-NQR72D5U.js", imports: ["/build/_shared/chunk-QSTAXA6X.js", "/build/_shared/chunk-S3N74YNX.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/errorpassword": { id: "routes/errorpassword", parentId: "root", path: "errorpassword", index: void 0, caseSensitive: void 0, module: "/build/routes/errorpassword-LALPPX2Z.js", imports: ["/build/_shared/chunk-XSFBZHAQ.js", "/build/_shared/chunk-S3N74YNX.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/join": { id: "routes/join", parentId: "root", path: "join", index: void 0, caseSensitive: void 0, module: "/build/routes/join-NRWIVCQV.js", imports: ["/build/_shared/chunk-MECONK2F.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/login": { id: "routes/login", parentId: "root", path: "login", index: void 0, caseSensitive: void 0, module: "/build/routes/login-3MCFUBZ4.js", imports: ["/build/_shared/chunk-QSTAXA6X.js", "/build/_shared/chunk-S3N74YNX.js", "/build/_shared/chunk-KW6WLGT6.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/login_cliente": { id: "routes/login_cliente", parentId: "root", path: "login_cliente", index: void 0, caseSensitive: void 0, module: "/build/routes/login_cliente-R2OWVG5S.js", imports: ["/build/_shared/chunk-CCWRKC7U.js", "/build/_shared/chunk-FFZXZXWH.js", "/build/_shared/chunk-KW6WLGT6.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/navbar": { id: "routes/navbar", parentId: "root", path: "navbar", index: void 0, caseSensitive: void 0, module: "/build/routes/navbar-FO7LBMN3.js", imports: ["/build/_shared/chunk-CCWRKC7U.js", "/build/_shared/chunk-FFZXZXWH.js", "/build/_shared/chunk-KW6WLGT6.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/notes": { id: "routes/notes", parentId: "root", path: "notes", index: void 0, caseSensitive: void 0, module: "/build/routes/notes-5N46U5R5.js", imports: ["/build/_shared/chunk-MECONK2F.js", "/build/_shared/chunk-AC7UQQEL.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/notes.$noteId": { id: "routes/notes.$noteId", parentId: "routes/notes", path: ":noteId", index: void 0, caseSensitive: void 0, module: "/build/routes/notes.$noteId-XOGPWVC6.js", imports: ["/build/_shared/chunk-5B6WUN7S.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/notes._index": { id: "routes/notes._index", parentId: "routes/notes", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/notes._index-WAYJKSXV.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/notes.new": { id: "routes/notes.new", parentId: "routes/notes", path: "new", index: void 0, caseSensitive: void 0, module: "/build/routes/notes.new-YOBJJLD5.js", imports: ["/build/_shared/chunk-5B6WUN7S.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/root": { id: "routes/root", parentId: "root", path: "root", index: void 0, caseSensitive: void 0, module: "/build/routes/root-EZRNH4KT.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/successemail": { id: "routes/successemail", parentId: "root", path: "successemail", index: void 0, caseSensitive: void 0, module: "/build/routes/successemail-7BCDQ57J.js", imports: ["/build/_shared/chunk-DRB32KNV.js", "/build/_shared/chunk-S3N74YNX.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/venda": { id: "routes/venda", parentId: "root", path: "venda", index: void 0, caseSensitive: void 0, module: "/build/routes/venda-APSWMAFP.js", imports: ["/build/_shared/chunk-FFZXZXWH.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, hmr: void 0, url: "/build/manifest-DAF88DD0.js" };
   }
 });
 
@@ -1977,7 +1977,8 @@ function NewNotePage() {
 var calebe_exports = {};
 __export(calebe_exports, {
   action: () => action5,
-  default: () => Example3
+  default: () => Example3,
+  links: () => links2
 });
 var import_react10 = require("@remix-run/react");
 var import_node7 = require("@remix-run/node");
@@ -2019,8 +2020,15 @@ function ErrorMessage() {
   }, this);
 }
 
+// app/styles.css
+var styles_default = "/build/_assets/styles-XPOSTERO.css";
+
 // app/routes/calebe.tsx
-var import_jsx_dev_runtime14 = require("react/jsx-dev-runtime"), action5 = async ({ request }) => {
+var import_jsx_dev_runtime14 = require("react/jsx-dev-runtime");
+function links2() {
+  return [{ rel: "stylesheet", href: styles_default }];
+}
+var action5 = async ({ request }) => {
   let formData = await request.formData(), user3 = formData.get("email"), password = formData.get("password"), usuarioEncontrado = await prisma.user.findFirst({
     where: {
       email: user3,
@@ -2035,6 +2043,11 @@ function Example3() {
   let data = (0, import_react10.useActionData)();
   return /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)(import_jsx_dev_runtime14.Fragment, { children: [
     JSON.stringify(data),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)("div", { className: "exemplo", children: "oiii" }, void 0, !1, {
+      fileName: "app/routes/calebe.tsx",
+      lineNumber: 60,
+      columnNumber: 7
+    }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)("div", { className: "flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)("div", { className: "sm:mx-auto sm:w-full sm:max-w-sm", children: [
         /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)(
@@ -2048,26 +2061,26 @@ function Example3() {
           !1,
           {
             fileName: "app/routes/calebe.tsx",
-            lineNumber: 53,
+            lineNumber: 65,
             columnNumber: 11
           },
           this
         ),
         /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)("h2", { className: "mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900", children: "Acessar sistema" }, void 0, !1, {
           fileName: "app/routes/calebe.tsx",
-          lineNumber: 58,
+          lineNumber: 70,
           columnNumber: 11
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/calebe.tsx",
-        lineNumber: 52,
+        lineNumber: 64,
         columnNumber: 9
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)("div", { className: "mt-10 sm:mx-auto sm:w-full sm:max-w-sm", children: /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)(import_react10.Form, { className: "space-y-6", action: "", method: "POST", children: [
         /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)("div", { children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)("label", { htmlFor: "email", className: "block text-sm font-medium leading-6 text-gray-900", children: "Usu\xE1rio" }, void 0, !1, {
             fileName: "app/routes/calebe.tsx",
-            lineNumber: 66,
+            lineNumber: 78,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)("div", { className: "mt-2", children: /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)(
@@ -2084,35 +2097,35 @@ function Example3() {
             !1,
             {
               fileName: "app/routes/calebe.tsx",
-              lineNumber: 70,
+              lineNumber: 82,
               columnNumber: 17
             },
             this
           ) }, void 0, !1, {
             fileName: "app/routes/calebe.tsx",
-            lineNumber: 69,
+            lineNumber: 81,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/calebe.tsx",
-          lineNumber: 65,
+          lineNumber: 77,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)("div", { children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)("div", { className: "flex items-center justify-between", children: [
             /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)("label", { htmlFor: "password", className: "block text-sm font-medium leading-6 text-gray-900", children: "Senha" }, void 0, !1, {
               fileName: "app/routes/calebe.tsx",
-              lineNumber: 83,
+              lineNumber: 95,
               columnNumber: 17
             }, this),
             /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)("div", { className: "text-sm" }, void 0, !1, {
               fileName: "app/routes/calebe.tsx",
-              lineNumber: 86,
+              lineNumber: 98,
               columnNumber: 17
             }, this)
           ] }, void 0, !0, {
             fileName: "app/routes/calebe.tsx",
-            lineNumber: 82,
+            lineNumber: 94,
             columnNumber: 15
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)("div", { className: "mt-2", children: /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)(
@@ -2129,18 +2142,18 @@ function Example3() {
             !1,
             {
               fileName: "app/routes/calebe.tsx",
-              lineNumber: 90,
+              lineNumber: 102,
               columnNumber: 17
             },
             this
           ) }, void 0, !1, {
             fileName: "app/routes/calebe.tsx",
-            lineNumber: 89,
+            lineNumber: 101,
             columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/calebe.tsx",
-          lineNumber: 81,
+          lineNumber: 93,
           columnNumber: 13
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)("div", { children: [
@@ -2155,43 +2168,43 @@ function Example3() {
             !1,
             {
               fileName: "app/routes/calebe.tsx",
-              lineNumber: 102,
+              lineNumber: 114,
               columnNumber: 15
             },
             this
           ),
           data != null && data.error ? /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)(ErrorMessage, {}, void 0, !1, {
             fileName: "app/routes/calebe.tsx",
-            lineNumber: 109,
+            lineNumber: 121,
             columnNumber: 30
           }, this) : "",
           (data == null ? void 0 : data.success) && /* @__PURE__ */ (0, import_jsx_dev_runtime14.jsxDEV)("div", { children: "Eba, loguei" }, void 0, !1, {
             fileName: "app/routes/calebe.tsx",
-            lineNumber: 111,
+            lineNumber: 123,
             columnNumber: 33
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/calebe.tsx",
-          lineNumber: 101,
+          lineNumber: 113,
           columnNumber: 13
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/calebe.tsx",
-        lineNumber: 64,
+        lineNumber: 76,
         columnNumber: 11
       }, this) }, void 0, !1, {
         fileName: "app/routes/calebe.tsx",
-        lineNumber: 63,
+        lineNumber: 75,
         columnNumber: 9
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/calebe.tsx",
-      lineNumber: 51,
+      lineNumber: 63,
       columnNumber: 7
     }, this)
   ] }, void 0, !0, {
     fileName: "app/routes/calebe.tsx",
-    lineNumber: 49,
+    lineNumber: 58,
     columnNumber: 5
   }, this);
 }

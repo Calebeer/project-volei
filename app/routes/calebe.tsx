@@ -8,8 +8,17 @@ import { XCircleIcon } from "@heroicons/react/20/solid";
 import ErrorMessage from "./erro";
 import { useState } from "react";
 import Navbar from "./navbar";
+import styles from '~/styles.css'
 
-export let action: ActionFunction = async({ request }) => { 
+export function links() {
+  return [{ rel: "stylesheet", href: styles }];
+}
+
+// export let loader: LoaderFunction = async({ request }) => {
+//     return{'user': await prisma.user.findMany()}
+// }
+
+  export let action: ActionFunction = async({ request }) => { 
  //aqui ele está pegando todas as informacões do formulário
   const formData = await request.formData();
 
@@ -48,6 +57,9 @@ export default function Example() {
   return (
     <>
       {JSON.stringify(data)}
+      <div className="exemplo" >
+        oiii
+      </div>
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <img
@@ -121,3 +133,4 @@ export default function Example() {
     </>
   )
 }
+
