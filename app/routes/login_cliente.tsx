@@ -1,7 +1,7 @@
 import { LoaderFunction } from "@remix-run/node"
 import { useLoaderData } from "@remix-run/react";
 import { prisma } from "~/db.server";
-import Navbar from "./navbar";
+import Navbar from "../layout/Navbar";
 
 export let loader: LoaderFunction = async({ request }) => { 
   const url = new URL(request.url);
