@@ -74,7 +74,7 @@ export default function CreateAcount() {
           </div>
   
           <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-            <form  className="space-y-6" action="#" method="post">
+            <Form className="space-y-6" action="#" method="post">
               <div>
                 <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
                   Nome Completo
@@ -168,7 +168,7 @@ export default function CreateAcount() {
               {data?.password_error? <ErrorMessage text="Senhas incorretas" /> : ''}
 
               </div>
-            </form>
+            </Form>
   
             <p className="mt-10 text-center text-sm text-gray-500">
               Você já tem uma conta?{' '}

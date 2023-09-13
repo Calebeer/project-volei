@@ -111,7 +111,12 @@ export default function Login() {
                   Entrar
                 </button>
               {data?.error ? <ErrorMessage text="Usuário ou senha incorretos" /> : ''}
-
+              <p className="mt-10 text-center text-sm text-gray-500">
+              Você já tem uma conta?{' '}
+              <a href="/createacount" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
+                Criar nova conta
+              </a>
+            </p>
               </div>
             </Form>
           </div>
