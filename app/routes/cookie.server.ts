@@ -1,5 +1,5 @@
-import {createCookie} from '@remix-run/node'
+import { createCookie } from "@remix-run/node"; // or cloudflare/deno
 
-export const tosBannerCookie = createCookie('tos-banner', {
-    maxAge: 31_536_000,
+export const userPrefs = createCookie("user-prefs", {
+  maxAge: 604_800, // one week
 });

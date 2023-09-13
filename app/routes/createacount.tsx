@@ -17,6 +17,7 @@ export let action: ActionFunction = async({ request }) => {
     const password = formData.get("password") as string;
     const password2 = formData.get("password2") as string;
 
+
     const findEmail = await prisma.user.findFirst({
       where:{
         email
@@ -32,7 +33,11 @@ export let action: ActionFunction = async({ request }) => {
     if(password !== password2){
       console.log('senhas diferentes');
       return{
-        password_error:'senhas diferentes'
+        password_equal:'senhas diferentes'
+      }
+    }if(password.length && password.length < 5){
+      return{
+        errorr:"senha fraca, digite uma senha maior"
       }
     }
       
@@ -164,8 +169,9 @@ export default function CreateAcount() {
                   Cadastrar
                 </button>
               {data?.error ? <ErrorMessage text="Email já cadastrado" /> : ''}
+              {data?.errorr ? <ErrorMessage text="senha fraca, digite uma senha maior" /> : ''}
               {data?.success ? <SuccessfullyEmail text="email cadastrado com sucesso" /> : ''}
-              {data?.password_error? <ErrorMessage text="Senhas incorretas" /> : ''}
+              {data?.password_equal? <ErrorMessage text="Senhas incorretas" /> : ''}
 
               </div>
             </Form>
