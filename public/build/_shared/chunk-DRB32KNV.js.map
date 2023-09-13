@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["../../../app/routes/successemail.tsx"],
-  "sourcesContent": ["import { CheckCircleIcon, XMarkIcon } from '@heroicons/react/20/solid'\n\nexport default function SuccessfullyEmail() {\n  return (\n    <div className=\"rounded-md bg-green-50 p-4\">\n      <div className=\"flex\">\n        <div className=\"flex-shrink-0\">\n          <CheckCircleIcon className=\"h-5 w-5 text-green-400\" aria-hidden=\"true\" />\n        </div>\n        <div className=\"ml-3\">\n          <p className=\"text-sm font-medium text-green-800\">Email cadastrado com sucesso</p>\n        </div>\n        <div className=\"ml-auto pl-3\">\n          <div className=\"-mx-1.5 -my-1.5\">\n              <span className=\"sr-only\">Dismiss</span>\n          </div>\n        </div>\n      </div>\n    </div>\n  )\n}\n"],
-  "mappings": ";;;;;;;;;;;;;;;;AAAA;AAAA;AAAA;AAAA;AAAA;AAOU;AALK,SAAR,oBAAqC;AAC1C,SACE,mDAAC,SAAI,WAAU,8BACb,6DAAC,SAAI,WAAU,QACb;AAAA,uDAAC,SAAI,WAAU,iBACb,6DAAC,2BAAgB,WAAU,0BAAyB,eAAY,UAAhE;AAAA;AAAA;AAAA;AAAA,WAAuE,KADzE;AAAA;AAAA;AAAA;AAAA,WAEA;AAAA,IACA,mDAAC,SAAI,WAAU,QACb,6DAAC,OAAE,WAAU,sCAAqC,4CAAlD;AAAA;AAAA;AAAA;AAAA,WAA8E,KADhF;AAAA;AAAA;AAAA;AAAA,WAEA;AAAA,IACA,mDAAC,SAAI,WAAU,gBACb,6DAAC,SAAI,WAAU,mBACX,6DAAC,UAAK,WAAU,WAAU,uBAA1B;AAAA;AAAA;AAAA;AAAA,WAAiC,KADrC;AAAA;AAAA;AAAA;AAAA,WAEA,KAHF;AAAA;AAAA;AAAA;AAAA,WAIA;AAAA,OAXF;AAAA;AAAA;AAAA;AAAA,SAYA,KAbF;AAAA;AAAA;AAAA;AAAA,SAcA;AAEJ;",
-  "names": []
-}

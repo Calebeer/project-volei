@@ -1,9 +1,12 @@
 import { ActionFunction, LoaderFunction } from "@remix-run/node"
-import { useActionData } from "@remix-run/react";
+import { useActionData, Form } from "@remix-run/react";
 import { prisma } from "~/db.server";
-import ErrorEmail from "./emailerror";
-import SuccessfullyEmail from "./successemail";
+import ErrorEmail from "../layout/ErrorMessage";
+import SuccessfullyEmail from "../layout/successemail";
 import ErrorPassword from "./errorpassword";
+import ErrorMessage from "../layout/ErrorMessage";
+
+
 
 export let action: ActionFunction = async({ request }) => { 
     const formData = await request.formData();
@@ -14,13 +17,13 @@ export let action: ActionFunction = async({ request }) => {
     const password = formData.get("password") as string;
     const password2 = formData.get("password2") as string;
 
-    const databaseResult = await prisma.user.findFirst({
+    const findEmail = await prisma.user.findFirst({
       where:{
         email
       }
     })
 
-    if(databaseResult){
+    if(findEmail){
       return{
         error:'email já cadastrado',
       }
@@ -54,6 +57,8 @@ export default function CreateAcount() {
     
   const data = useActionData<typeof action>();
 
+  
+
   return (
       <>
         <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
@@ -69,7 +74,7 @@ export default function CreateAcount() {
           </div>
   
           <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-            <form className="space-y-6" action="" method="post">
+            <form  className="space-y-6" action="#" method="post">
               <div>
                 <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
                   Nome Completo
@@ -82,7 +87,7 @@ export default function CreateAcount() {
                     type="text"
                     autoComplete="email"
                     required
-                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 p-2"
                   />
                 </div>
                 <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
@@ -96,7 +101,7 @@ export default function CreateAcount() {
                     type="text"
                     autoComplete="email"
                     required
-                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 p-2"
                   />
                 </div>
                 
@@ -111,7 +116,7 @@ export default function CreateAcount() {
                     type="email"
                     autoComplete="email"
                     required
-                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 p-2"
                   />
                 </div>
                 
@@ -131,7 +136,7 @@ export default function CreateAcount() {
                     type="password"
                     autoComplete="current-password"
                     required
-                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 p-2"
                   />
                 </div>
                 <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900 ">
@@ -145,7 +150,7 @@ export default function CreateAcount() {
                     type="password"
                     autoComplete="email"
                     required
-                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading- p-2"
                   />
                 </div>
               </div>
@@ -158,9 +163,10 @@ export default function CreateAcount() {
                 >
                   Cadastrar
                 </button>
-              {data?.error ? <ErrorEmail /> : ''}
-              {data?.success ? <SuccessfullyEmail /> : ''}
-              {data?.password_error? <ErrorPassword /> : ''}
+              {data?.error ? <ErrorMessage text="Email já cadastrado" /> : ''}
+              {data?.success ? <SuccessfullyEmail text="email cadastrado com sucesso" /> : ''}
+              {data?.password_error? <ErrorMessage text="Senhas incorretas" /> : ''}
+
               </div>
             </form>
   
