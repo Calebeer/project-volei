@@ -2,6 +2,7 @@ import { cssBundleHref } from "@remix-run/css-bundle";
 import type { LinksFunction, LoaderArgs } from "@remix-run/node";
 import { json } from "@remix-run/node";
 import {
+  Link,
   Links,
   LiveReload,
   Meta,
@@ -12,8 +13,8 @@ import {
 
 import { getUser } from "~/session.server";
 import stylesheet from "~/tailwind.css";
-
-
+import teste from '~/routes/teste'
+import NavBar from '~/layout/NavBar'
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },

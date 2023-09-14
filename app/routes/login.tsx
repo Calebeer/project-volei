@@ -3,8 +3,6 @@ import { Form, useActionData } from "@remix-run/react";
 import { log } from "console";
 import { prisma } from "~/db.server";
 import ErrorMessage from "~/layout/ErrorMessage";
-import ErrorPassword from "./errorpassword";
-
 
 
 

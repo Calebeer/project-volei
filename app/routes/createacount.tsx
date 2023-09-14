@@ -33,11 +33,11 @@ export let action: ActionFunction = async({ request }) => {
     if(password !== password2){
       console.log('senhas diferentes');
       return{
-        password_equal:'senhas diferentes'
+        error:'senhas diferentes'
       }
     }if(password.length && password.length < 5){
       return{
-        errorr:"senha fraca, digite uma senha maior"
+        error:"senha fraca, digite uma senha maior"
       }
     }
       
@@ -66,6 +66,7 @@ export default function CreateAcount() {
 
   return (
       <>
+
         <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
           <div className="sm:mx-auto sm:w-full sm:max-w-sm">
             <img
@@ -168,10 +169,8 @@ export default function CreateAcount() {
                 >
                   Cadastrar
                 </button>
-              {data?.error ? <ErrorMessage text="Email já cadastrado" /> : ''}
-              {data?.errorr ? <ErrorMessage text="senha fraca, digite uma senha maior" /> : ''}
-              {data?.success ? <SuccessfullyEmail text="email cadastrado com sucesso" /> : ''}
-              {data?.password_equal? <ErrorMessage text="Senhas incorretas" /> : ''}
+              {data?.error ? <ErrorMessage text={data.error} /> : ''}
+              {data?.success ? <SuccessfullyEmail text={data.success} /> : ''}
 
               </div>
             </Form>
