@@ -1,13 +1,13 @@
 import NavBar from '~/layout/NavBar'
 
-export default function Scheduling() {
+export default function myScheduling() {
   
     return (
       <>
       <div>
         <NavBar/>
         <h1>
-            Criar Agendamento
+            Meus Agendamentos
         </h1>
       </div>
       </>

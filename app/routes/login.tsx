@@ -26,7 +26,7 @@ export let action: ActionFunction = async({ request }) => {
 
   //AQUI É FEITO O CAMINHO, CASO A O USUÁRIO SEJA ENCONTRADO ELE VAI ENTRAR NO SITE, CASO NÃO SEJA ENCONRTRADO VAI RETORNAR A MENSAGEM DE erro:'Email ou senha inválidos'
   if (userfound){
-    return redirect("/inicio");
+    return redirect("/create_scheduling");
   }else{
     console.log('Não encontrado');
     return{

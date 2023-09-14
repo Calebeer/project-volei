@@ -1,11 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, NavLink } from "@remix-run/react";
-
-
 
 export default function Index() {
   const [navbar, setNavbar] = useState(false);
 
+  // Verificar se estamos no navegador antes de usar o objeto window
+  const isBrowser = typeof window !== "undefined";
 
   return (
     <nav className="w-full bg-white shadow">
@@ -20,50 +20,31 @@ export default function Index() {
                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
                 onClick={() => setNavbar(!navbar)}
               >
-                {navbar ? (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fillRule="evenodd"
-                      d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
+                {/* {navbar ? (
+                  // ...código do botão do menu mobile...
                 ) : (
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="w-6 h-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M4 6h16M4 12h16M4 18h16"
-                    />
-                  </svg>
-                )}
+                  // ...código do botão do menu mobile...
+                )} */}
               </button>
             </div>
           </div>
         </div>
         <div>
           <div
-            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
-              }`}
+            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
+              navbar ? "block" : "hidden"
+            }`}
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               <li className="font-semibold text-gray-600 hover:text-blue-600">
-                <Link to="/login">Criar agendamento</Link>
+                <NavLink to="/create_scheduling">
+                  <span style={{ color: isBrowser && window.location.pathname === '/create_scheduling' ? '#314bce' : '' }}>Criar agendamento</span>
+                </NavLink>
               </li>
               <li className="font-semibold text-gray-600 hover:text-blue-600">
-                <Link to="/cadastro_reme">Meus agendamentos</Link>
+              <NavLink to="/my_scheduling">
+                  <span style={{ color: isBrowser && window.location.pathname === '/my_scheduling' ? '#314bce' : '' }}>Meus agendamento</span>
+                </NavLink>
               </li>
               <li className="font-semibold text-gray-600 hover:text-blue-600">
                 <Link to="/about">About US</Link>
@@ -72,16 +53,9 @@ export default function Index() {
                 <Link to="/contact">Contact US</Link>
               </li>
             </ul>
-            
-
           </div>
         </div>
       </div>
     </nav>
   );
 }
-
-
-
-
-
