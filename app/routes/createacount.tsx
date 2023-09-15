@@ -5,6 +5,7 @@ import ErrorEmail from "../layout/ErrorMessage";
 import SuccessfullyEmail from "../layout/successemail";
 import ErrorPassword from "./errorpassword";
 import ErrorMessage from "../layout/ErrorMessage";
+import { SetStateAction, useEffect, useState } from "react";
 
 
 
@@ -61,8 +62,45 @@ export let action: ActionFunction = async({ request }) => {
 export default function CreateAcount() {
     
   const data = useActionData<typeof action>();
+  const [cep,setCep] = useState('')
+  
+  const handleChange = (e: { target: { value: SetStateAction<string>; }; }) => {
+    setCep(e.target.value);
+    console.log(cep);
+  };
+
+  function validation(e){
+    setCep(e.target.value);
+    console.log(cep);
+    e.preventDefault()
+  }
+  //   fetch(`https://viacep.com.br/ws/${cep}/json/`,{
+  //     method:'GET',
+  //     headers:{
+  //         'Content-type': 'application/json'
+  //     },
+  //   })
+  //   .then(resp => resp.json())
+  //   .then((data) =>{
+      
+  //     console.log('deu certo');
+      
+  //  })
+  //   .catch((err) =>console.log(err))
+  //   }
+    
+  // }
+
+  // function handleChange(){
+
+
 
   
+
+    
+    
+
+
 
   return (
       <>
@@ -87,7 +125,7 @@ export default function CreateAcount() {
                 </label>
                 <div className="mt-2">
                   <input
-                    id="email"
+                    id="name"
                     placeholder="Digite seu nome aqui"
                     name="name"
                     type="text"
@@ -97,20 +135,69 @@ export default function CreateAcount() {
                   />
                 </div>
                 <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
-                  Endereço
+                  Cep
+                </label>
+                <div className="inline-flex mt-2">
+                  <input
+                    id="cep"
+                    placeholder="Digite seu cep, ex:12345-678"
+                    name="cep"
+                    type="tel"
+                    value={cep}
+                    onChange={handleChange}
+                    autoComplete="email"
+                    required
+                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 p-2 "
+                  />
+                  <button  
+                  type="submit" onClick={validation}
+                  className="flex  justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 m-1 "
+                >
+                  Verificar
+                </button>
+                </div>
+                <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
+                  Rua
                 </label>
                 <div className="mt-2">
                   <input
-                    id="email"
-                    placeholder="rua, número da casa e bairro"
-                    name="address"
+                    id="stret"
+                    placeholder="Digite sua rua"
+                    name="cep"
                     type="text"
                     autoComplete="email"
                     required
                     className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 p-2"
                   />
                 </div>
-                
+                <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
+                  Bairro
+                </label>
+                <div className="mt-2">
+                  <input
+                    id="neighborhood"
+                    placeholder="Digite o seu bairro"
+                    name="cep"
+                    type="text"
+                    autoComplete="email"
+                    required
+                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 p-2"
+                  />
+                </div>
+                <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
+                  Número da casa
+                </label>
+                <div className="mt-2">
+                  <input
+                    id="number"
+                    placeholder="Digite o número de sua casa"
+                    name="cep"
+                    type="text"
+                    autoComplete="email"
+                    required
+                    className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 p-2"
+                  />
+                </div>
                 <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900 ">
                   Email
                 </label>
@@ -150,7 +237,7 @@ export default function CreateAcount() {
                 </label>
                 <div className="mt-2">
                   <input
-                    id="email"
+                    id="confirm_password"
                     placeholder="Digite a senha novamente"
                     name="password2"
                     type="password"

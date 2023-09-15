@@ -37,20 +37,24 @@ export default function Index() {
           >
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
               <li className="font-semibold text-gray-600 hover:text-blue-600">
-                <NavLink to="/create_scheduling">
-                  <span style={{ color: isBrowser && window.location.pathname === '/create_scheduling' ? '#314bce' : '' }}>Criar agendamento</span>
-                </NavLink>
+                    <NavLink to="/create_scheduling">
+                        <span style={{ color: isBrowser && window.location.pathname === '/create_scheduling' ? '#314bce' : '' }}>Criar agendamento</span>
+                    </NavLink>
               </li>
               <li className="font-semibold text-gray-600 hover:text-blue-600">
-              <NavLink to="/my_scheduling">
-                  <span style={{ color: isBrowser && window.location.pathname === '/my_scheduling' ? '#314bce' : '' }}>Meus agendamento</span>
-                </NavLink>
+                    <NavLink to="/my_scheduling">
+                        <span style={{ color: isBrowser && window.location.pathname === '/my_scheduling' ? '#314bce' : '' }}>Meus agendamento</span>
+                    </NavLink>
               </li>
               <li className="font-semibold text-gray-600 hover:text-blue-600">
-                <Link to="/about">About US</Link>
+                    <NavLink to="/">
+                        <span style={{ color: isBrowser && window.location.pathname === '/login' ? '#314bce' : '' }}>Meus agendamento</span>
+                    </NavLink>
               </li>
               <li className="font-semibold text-gray-600 hover:text-blue-600">
-                <Link to="/contact">Contact US</Link>
+                    <NavLink to="/my_scheduling">
+                        <span style={{ color: isBrowser && window.location.pathname === '/' ? '#314bce' : '' }}>Meus agendamento</span>
+                    </NavLink>
               </li>
             </ul>
           </div>

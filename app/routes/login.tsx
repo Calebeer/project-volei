@@ -1,6 +1,7 @@
 import { ActionFunction, redirect } from "@remix-run/node"
 import { Form, useActionData } from "@remix-run/react";
 import { log } from "console";
+import { useState } from "react";
 import { prisma } from "~/db.server";
 import ErrorMessage from "~/layout/ErrorMessage";
 
@@ -41,7 +42,7 @@ export default function Login() {
 
   //AQUI ELE VAI ESTAR PEGANDO O QUE VAI RETORNAR A FUNÇÃO action.
   const data = useActionData<typeof action>();
-  
+  const [time,setTime] = useState(true)
 
   return (
     <>
