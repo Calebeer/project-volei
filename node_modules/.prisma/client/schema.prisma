@@ -10,10 +10,10 @@ generator client {
 model User {
   id         Int          @id @default(autoincrement())
   name       String
-  cep    Int @unique
+  cep    String 
   street String 
   neighborhood String
-  number Int
+  number String
   email      String       @unique
   password   String
   // Scheduling Scheduling[]
