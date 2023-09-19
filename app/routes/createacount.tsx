@@ -72,34 +72,35 @@ export let action: ActionFunction = async({ request }) => {
 export default function CreateAcount() {
     
   const data = useActionData<typeof action>();
-  const [address,setAddress] = useState({
+  const [formData,setFormData] = useState({
+    name:'',
     cep:'',
     logradouro:'',
-    bairro:''
+    bairro:'',
+    email:'',
+    password:'',
+    passwordConfirmation:'',
+    number:''
   })
 
-  
-  // const handleChange = (e: { target: { value: SetStateAction<string>; }; }) => {
-  //   setCep(e.target.value);
-  //   console.log(cep);
-  // };
-
   function validation(e:any){
-    setAddress(e.target.value);
-    console.log(address.cep);
+    setFormData(e.target.value);
+    console.log(formData.cep);
     e.preventDefault()
 
+    axios.get(`https://viacep.com.br/ws/${formData.cep}/json/`).then((response) => {
+        setFormData(response.data)
+        console.log(response.data);
+    }).catch((err)=>{
+      console.log('erro ao econtrar cep');})
+  }
 
-      axios.get(`https://viacep.com.br/ws/${address.cep}/json/`).then((response) => {
-          setAddress(response.data)
-          console.log(response.data);
-      })
-
-
-      
+  function submitForm(e: { preventDefault: () => void; }){
+    e.preventDefault()
+    console.log(`os dados:`,data);
+    
   }
   
-
   return (
       <>
 
@@ -116,19 +117,22 @@ export default function CreateAcount() {
           </div>
   
           <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-            <Form className="space-y-6" action="#" method="post">
+            <Form className="space-y-6" onSubmit={submitForm} >
               <div>
                 <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
                   Nome Completo
                 </label>
                 <div className="mt-2">
                   <input
-                    id="name"
                     placeholder="Digite seu nome aqui"
-                    name="name"
                     type="text"
                     autoComplete="email"
                     required
+                    onChange={(e:any)=>{
+                      setFormData({...formData,name:e.target.value});
+                      console.log(formData);
+                      
+                    }}
                     className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 p-2"
                   />
                 </div>
@@ -137,15 +141,13 @@ export default function CreateAcount() {
                 </label>
                 <div className="inline-flex mt-2">
                   <input
-                    id="cep"
                     placeholder="Digite seu cep, ex:12345-678"
-                    name="cep"
                     type="tel"
-                    value={address?.cep}
+                    value={formData?.cep}
                     
                     onChange={(e:any)=>{
-                      setAddress({...address,cep:e.target.value});
-                      console.log(address);
+                      setFormData({...formData,cep:e.target.value});
+                      console.log(formData);
                       
                     }}
                     autoComplete="email"
@@ -156,23 +158,21 @@ export default function CreateAcount() {
                   type="submit" onClick={validation}
                   className="flex  justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 m-1 "
                 >
-                  Verificar
+                     Verificar
                 </button>
                 </div>
                 <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
-                  Rua
+                Endereço
                 </label>
                 <div className="mt-2">
                   <input
-                    id="stret"
                     placeholder="Digite sua rua"
-                    name="street"
                     type="text"
                     autoComplete="email"
-                    value={address?.logradouro}
+                    value={formData?.logradouro}
                     onChange={(e:any)=>{
-                      setAddress({...address,logradouro:e.target.value});
-                      console.log(address);
+                      setFormData({...formData,logradouro:e.target.value});
+                      console.log(formData);
                       
                     }}
                     required
@@ -184,14 +184,12 @@ export default function CreateAcount() {
                 </label>
                 <div className="mt-2">
                   <input
-                    id="neighborhood"
                     placeholder="Digite o seu bairro"
-                    name="neighborhood"
                     type="text"
-                    value={address?.bairro}
+                    value={formData?.bairro}
                     onChange={(e:any)=>{
-                      setAddress({...address,bairro:e.target.value});
-                      console.log(address);    
+                      setFormData({...formData,bairro:e.target.value});
+                      console.log(formData);    
                     }}
                     autoComplete="email"
                     required
@@ -203,12 +201,15 @@ export default function CreateAcount() {
                 </label>
                 <div className="mt-2">
                   <input
-                    id="number"
                     placeholder="Digite o número de sua casa"
-                    name="number"
                     type="text"
                     autoComplete="email"
                     required
+                    onChange={(e:any)=>{
+                      setFormData({...formData,number:e.target.value});
+
+                      
+                    }}
                     className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 p-2"
                   />
                 </div>
@@ -217,12 +218,15 @@ export default function CreateAcount() {
                 </label>
                 <div className="mt-2">
                   <input
-                    id="email"
                     placeholder="Digite um email válido"
-                    name="email"
                     type="email"
                     autoComplete="email"
                     required
+                    onChange={(e:any)=>{
+                      setFormData({...formData,email:e.target.value});
+                      console.log(formData);
+                      
+                    }}
                     className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 p-2"
                   />
                 </div>
@@ -237,12 +241,15 @@ export default function CreateAcount() {
                 </div>
                 <div className="mt-2">
                   <input
-                    id="password"
                     placeholder="Digite sua senha"
-                    name="password"
                     type="password"
                     autoComplete="current-password"
                     required
+                    onChange={(e:any)=>{
+                      setFormData({...formData,password:e.target.value});
+                      console.log(formData);
+                      
+                    }}
                     className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 p-2"
                   />
                 </div>
@@ -251,12 +258,15 @@ export default function CreateAcount() {
                 </label>
                 <div className="mt-2">
                   <input
-                    id="confirm_password"
                     placeholder="Digite a senha novamente"
-                    name="password2"
                     type="password"
                     autoComplete="email"
                     required
+                    onChange={(e:any)=>{
+                      setFormData({...formData,passwordConfirmation:e.target.value});
+                      console.log(formData);
+                      
+                    }}
                     className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading- p-2"
                   />
                 </div>

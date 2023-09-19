@@ -34,7 +34,7 @@ __export(assets_manifest_exports, {
 });
 var assets_manifest_default, init_assets_manifest = __esm({
   "server-assets-manifest:@remix-run/dev/assets-manifest"() {
-    assets_manifest_default = { version: "abced618", entry: { module: "/build/entry.client-6XS2CQIT.js", imports: ["/build/_shared/chunk-P445VOJ4.js", "/build/_shared/chunk-E4JT4A7Q.js", "/build/_shared/chunk-ZQ7KRPZ3.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-XTTHQFCS.js", imports: ["/build/_shared/chunk-4VM4PN2U.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/asd": { id: "routes/asd", parentId: "root", path: "asd", index: void 0, caseSensitive: void 0, module: "/build/routes/asd-ZTPFQRU6.js", imports: ["/build/_shared/chunk-6X3JF4KQ.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/cadastro_reme": { id: "routes/cadastro_reme", parentId: "root", path: "cadastro_reme", index: void 0, caseSensitive: void 0, module: "/build/routes/cadastro_reme-UTZ2QOMY.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/cookie.server": { id: "routes/cookie.server", parentId: "root", path: "cookie/server", index: void 0, caseSensitive: void 0, module: "/build/routes/cookie.server-2Q3D3B3L.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/create_scheduling": { id: "routes/create_scheduling", parentId: "root", path: "create_scheduling", index: void 0, caseSensitive: void 0, module: "/build/routes/create_scheduling-E4MWFQ2A.js", imports: ["/build/_shared/chunk-MPMM35OT.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/createacount": { id: "routes/createacount", parentId: "root", path: "createacount", index: void 0, caseSensitive: void 0, module: "/build/routes/createacount-PKVIYS35.js", imports: ["/build/_shared/chunk-4EYSO3XP.js", "/build/_shared/chunk-RRAIN5EG.js", "/build/_shared/chunk-6X3JF4KQ.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/errorpassword": { id: "routes/errorpassword", parentId: "root", path: "errorpassword", index: void 0, caseSensitive: void 0, module: "/build/routes/errorpassword-ZC3QCTCA.js", imports: ["/build/_shared/chunk-RRAIN5EG.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/home": { id: "routes/home", parentId: "root", path: "home", index: void 0, caseSensitive: void 0, module: "/build/routes/home-CFEFSBA7.js", imports: ["/build/_shared/chunk-QO5RIDGW.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/join": { id: "routes/join", parentId: "root", path: "join", index: void 0, caseSensitive: void 0, module: "/build/routes/join-XXBNJBG7.js", imports: ["/build/_shared/chunk-JNES4GTO.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/login": { id: "routes/login", parentId: "root", path: "login", index: void 0, caseSensitive: void 0, module: "/build/routes/login-TWFS76UB.js", imports: ["/build/_shared/chunk-4EYSO3XP.js", "/build/_shared/chunk-RRAIN5EG.js", "/build/_shared/chunk-6X3JF4KQ.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/login_cliente": { id: "routes/login_cliente", parentId: "root", path: "login_cliente", index: void 0, caseSensitive: void 0, module: "/build/routes/login_cliente-YROG2IFH.js", imports: ["/build/_shared/chunk-6X3JF4KQ.js", "/build/_shared/chunk-MPMM35OT.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/my_scheduling": { id: "routes/my_scheduling", parentId: "root", path: "my_scheduling", index: void 0, caseSensitive: void 0, module: "/build/routes/my_scheduling-5SNNXM3Y.js", imports: ["/build/_shared/chunk-MPMM35OT.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/notes": { id: "routes/notes", parentId: "root", path: "notes", index: void 0, caseSensitive: void 0, module: "/build/routes/notes-EAR76T26.js", imports: ["/build/_shared/chunk-JNES4GTO.js", "/build/_shared/chunk-4XZHNYMN.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/notes.$noteId": { id: "routes/notes.$noteId", parentId: "routes/notes", path: ":noteId", index: void 0, caseSensitive: void 0, module: "/build/routes/notes.$noteId-OLISKKFD.js", imports: ["/build/_shared/chunk-4VM4PN2U.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/notes._index": { id: "routes/notes._index", parentId: "routes/notes", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/notes._index-5FWTJYYO.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/notes.new": { id: "routes/notes.new", parentId: "routes/notes", path: "new", index: void 0, caseSensitive: void 0, module: "/build/routes/notes.new-WUQTOBDO.js", imports: ["/build/_shared/chunk-4VM4PN2U.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/root": { id: "routes/root", parentId: "root", path: "root", index: void 0, caseSensitive: void 0, module: "/build/routes/root-XUCTN2KZ.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/teste": { id: "routes/teste", parentId: "root", path: "teste", index: void 0, caseSensitive: void 0, module: "/build/routes/teste-3YKJ3VAT.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/venda": { id: "routes/venda", parentId: "root", path: "venda", index: void 0, caseSensitive: void 0, module: "/build/routes/venda-24CJT55H.js", imports: ["/build/_shared/chunk-QO5RIDGW.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, hmr: void 0, url: "/build/manifest-ABCED618.js" };
+    assets_manifest_default = { version: "f9765285", entry: { module: "/build/entry.client-2HSP442H.js", imports: ["/build/_shared/chunk-OGQY7OVT.js", "/build/_shared/chunk-E4JT4A7Q.js", "/build/_shared/chunk-ZQ7KRPZ3.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-NJAARA2K.js", imports: ["/build/_shared/chunk-4VM4PN2U.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/asd": { id: "routes/asd", parentId: "root", path: "asd", index: void 0, caseSensitive: void 0, module: "/build/routes/asd-ZTPFQRU6.js", imports: ["/build/_shared/chunk-6X3JF4KQ.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/cadastro_reme": { id: "routes/cadastro_reme", parentId: "root", path: "cadastro_reme", index: void 0, caseSensitive: void 0, module: "/build/routes/cadastro_reme-UTZ2QOMY.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/cookie.server": { id: "routes/cookie.server", parentId: "root", path: "cookie/server", index: void 0, caseSensitive: void 0, module: "/build/routes/cookie.server-2Q3D3B3L.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/create_scheduling": { id: "routes/create_scheduling", parentId: "root", path: "create_scheduling", index: void 0, caseSensitive: void 0, module: "/build/routes/create_scheduling-FCE4CCWL.js", imports: ["/build/_shared/chunk-BC46ARR6.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/createacount": { id: "routes/createacount", parentId: "root", path: "createacount", index: void 0, caseSensitive: void 0, module: "/build/routes/createacount-NCGPSJHW.js", imports: ["/build/_shared/chunk-4EYSO3XP.js", "/build/_shared/chunk-RRAIN5EG.js", "/build/_shared/chunk-6X3JF4KQ.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/errorpassword": { id: "routes/errorpassword", parentId: "root", path: "errorpassword", index: void 0, caseSensitive: void 0, module: "/build/routes/errorpassword-ZC3QCTCA.js", imports: ["/build/_shared/chunk-RRAIN5EG.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/home": { id: "routes/home", parentId: "root", path: "home", index: void 0, caseSensitive: void 0, module: "/build/routes/home-CFEFSBA7.js", imports: ["/build/_shared/chunk-QO5RIDGW.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/join": { id: "routes/join", parentId: "root", path: "join", index: void 0, caseSensitive: void 0, module: "/build/routes/join-M5JHTZT4.js", imports: ["/build/_shared/chunk-BTXCCJSC.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/login": { id: "routes/login", parentId: "root", path: "login", index: void 0, caseSensitive: void 0, module: "/build/routes/login-225HIWBB.js", imports: ["/build/_shared/chunk-4EYSO3XP.js", "/build/_shared/chunk-RRAIN5EG.js", "/build/_shared/chunk-6X3JF4KQ.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/login_cliente": { id: "routes/login_cliente", parentId: "root", path: "login_cliente", index: void 0, caseSensitive: void 0, module: "/build/routes/login_cliente-V54HSFSB.js", imports: ["/build/_shared/chunk-6X3JF4KQ.js", "/build/_shared/chunk-BC46ARR6.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/my_scheduling": { id: "routes/my_scheduling", parentId: "root", path: "my_scheduling", index: void 0, caseSensitive: void 0, module: "/build/routes/my_scheduling-ABUZQVCB.js", imports: ["/build/_shared/chunk-BC46ARR6.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/notes": { id: "routes/notes", parentId: "root", path: "notes", index: void 0, caseSensitive: void 0, module: "/build/routes/notes-D5RPOXWX.js", imports: ["/build/_shared/chunk-BTXCCJSC.js", "/build/_shared/chunk-4XZHNYMN.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/notes.$noteId": { id: "routes/notes.$noteId", parentId: "routes/notes", path: ":noteId", index: void 0, caseSensitive: void 0, module: "/build/routes/notes.$noteId-ND234Q37.js", imports: ["/build/_shared/chunk-4VM4PN2U.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/notes._index": { id: "routes/notes._index", parentId: "routes/notes", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/notes._index-6F7KC4OS.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/notes.new": { id: "routes/notes.new", parentId: "routes/notes", path: "new", index: void 0, caseSensitive: void 0, module: "/build/routes/notes.new-IM7IXQMZ.js", imports: ["/build/_shared/chunk-4VM4PN2U.js"], hasAction: !0, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/root": { id: "routes/root", parentId: "root", path: "root", index: void 0, caseSensitive: void 0, module: "/build/routes/root-XUCTN2KZ.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/teste": { id: "routes/teste", parentId: "root", path: "teste", index: void 0, caseSensitive: void 0, module: "/build/routes/teste-3YKJ3VAT.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/venda": { id: "routes/venda", parentId: "root", path: "venda", index: void 0, caseSensitive: void 0, module: "/build/routes/venda-24CJT55H.js", imports: ["/build/_shared/chunk-QO5RIDGW.js"], hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, cssBundleHref: void 0, hmr: void 0, url: "/build/manifest-F9765285.js" };
   }
 });
 
@@ -265,7 +265,7 @@ async function logout(request) {
 }
 
 // app/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-FGIRCTSL.css";
+var tailwind_default = "/build/_assets/tailwind-66E7JLNM.css";
 
 // app/root.tsx
 var import_jsx_dev_runtime2 = require("react/jsx-dev-runtime"), links = () => [
@@ -358,7 +358,40 @@ function Index() {
         "button",
         {
           className: "p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border",
-          onClick: () => setNavbar(!navbar)
+          onClick: () => setNavbar(!navbar),
+          children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(
+            "svg",
+            {
+              xmlns: "http://www.w3.org/2000/svg",
+              viewBox: "0 0 24 24",
+              fill: "currentColor",
+              className: "h-7 w-7",
+              children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(
+                "path",
+                {
+                  "fill-rule": "evenodd",
+                  d: "M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z",
+                  "clip-rule": "evenodd"
+                },
+                void 0,
+                !1,
+                {
+                  fileName: "app/layout/NavBar.tsx",
+                  lineNumber: 28,
+                  columnNumber: 15
+                },
+                this
+              )
+            },
+            void 0,
+            !1,
+            {
+              fileName: "app/layout/NavBar.tsx",
+              lineNumber: 23,
+              columnNumber: 17
+            },
+            this
+          )
         },
         void 0,
         !1,
@@ -389,19 +422,6 @@ function Index() {
         children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("ul", { className: "items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0", children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("li", { className: "font-semibold text-gray-600 hover:text-blue-600", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_react4.NavLink, { to: "/create_scheduling", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("span", { style: { color: isBrowser && window.location.pathname === "/create_scheduling" ? "#314bce" : "" }, children: "Criar agendamento" }, void 0, !1, {
             fileName: "app/layout/NavBar.tsx",
-            lineNumber: 41,
-            columnNumber: 25
-          }, this) }, void 0, !1, {
-            fileName: "app/layout/NavBar.tsx",
-            lineNumber: 40,
-            columnNumber: 21
-          }, this) }, void 0, !1, {
-            fileName: "app/layout/NavBar.tsx",
-            lineNumber: 39,
-            columnNumber: 15
-          }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("li", { className: "font-semibold text-gray-600 hover:text-blue-600", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_react4.NavLink, { to: "/my_scheduling", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("span", { style: { color: isBrowser && window.location.pathname === "/my_scheduling" ? "#314bce" : "" }, children: "Meus agendamento" }, void 0, !1, {
-            fileName: "app/layout/NavBar.tsx",
             lineNumber: 46,
             columnNumber: 25
           }, this) }, void 0, !1, {
@@ -413,7 +433,7 @@ function Index() {
             lineNumber: 44,
             columnNumber: 15
           }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("li", { className: "font-semibold text-gray-600 hover:text-blue-600", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_react4.NavLink, { to: "/", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("span", { style: { color: isBrowser && window.location.pathname === "/login" ? "#314bce" : "" }, children: "Meus agendamento" }, void 0, !1, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("li", { className: "font-semibold text-gray-600 hover:text-blue-600", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_react4.NavLink, { to: "/my_scheduling", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("span", { style: { color: isBrowser && window.location.pathname === "/my_scheduling" ? "#314bce" : "" }, children: "Meus agendamento" }, void 0, !1, {
             fileName: "app/layout/NavBar.tsx",
             lineNumber: 51,
             columnNumber: 25
@@ -426,7 +446,7 @@ function Index() {
             lineNumber: 49,
             columnNumber: 15
           }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("li", { className: "font-semibold text-gray-600 hover:text-blue-600", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_react4.NavLink, { to: "/my_scheduling", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("span", { style: { color: isBrowser && window.location.pathname === "/" ? "#314bce" : "" }, children: "Meus agendamento" }, void 0, !1, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("li", { className: "font-semibold text-gray-600 hover:text-blue-600", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_react4.NavLink, { to: "/", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("span", { style: { color: isBrowser && window.location.pathname === "/login" ? "#314bce" : "" }, children: "Meus agendamento" }, void 0, !1, {
             fileName: "app/layout/NavBar.tsx",
             lineNumber: 56,
             columnNumber: 25
@@ -438,10 +458,23 @@ function Index() {
             fileName: "app/layout/NavBar.tsx",
             lineNumber: 54,
             columnNumber: 15
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("li", { className: "font-semibold text-gray-600 hover:text-blue-600", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)(import_react4.NavLink, { to: "/my_scheduling", children: /* @__PURE__ */ (0, import_jsx_dev_runtime3.jsxDEV)("span", { style: { color: isBrowser && window.location.pathname === "/" ? "#314bce" : "" }, children: "Meus agendamento" }, void 0, !1, {
+            fileName: "app/layout/NavBar.tsx",
+            lineNumber: 61,
+            columnNumber: 25
+          }, this) }, void 0, !1, {
+            fileName: "app/layout/NavBar.tsx",
+            lineNumber: 60,
+            columnNumber: 21
+          }, this) }, void 0, !1, {
+            fileName: "app/layout/NavBar.tsx",
+            lineNumber: 59,
+            columnNumber: 15
           }, this)
         ] }, void 0, !0, {
           fileName: "app/layout/NavBar.tsx",
-          lineNumber: 38,
+          lineNumber: 43,
           columnNumber: 13
         }, this)
       },
@@ -449,13 +482,13 @@ function Index() {
       !1,
       {
         fileName: "app/layout/NavBar.tsx",
-        lineNumber: 33,
+        lineNumber: 38,
         columnNumber: 11
       },
       this
     ) }, void 0, !1, {
       fileName: "app/layout/NavBar.tsx",
-      lineNumber: 32,
+      lineNumber: 37,
       columnNumber: 9
     }, this)
   ] }, void 0, !0, {
@@ -1164,15 +1197,25 @@ var import_react7 = require("react"), import_axios = __toESM(require("axios")), 
   return console.log(cria), { success: "email cadastrado com sucesso" };
 };
 function CreateAcount() {
-  let data = (0, import_react6.useActionData)(), [address, setAddress] = (0, import_react7.useState)({
+  let data = (0, import_react6.useActionData)(), [formData, setFormData] = (0, import_react7.useState)({
+    name: "",
     cep: "",
     logradouro: "",
-    bairro: ""
+    bairro: "",
+    email: "",
+    password: "",
+    passwordConfirmation: "",
+    number: ""
   });
   function validation(e) {
-    setAddress(e.target.value), console.log(address.cep), e.preventDefault(), import_axios.default.get(`https://viacep.com.br/ws/${address.cep}/json/`).then((response) => {
-      setAddress(response.data), console.log(response.data);
+    setFormData(e.target.value), console.log(formData.cep), e.preventDefault(), import_axios.default.get(`https://viacep.com.br/ws/${formData.cep}/json/`).then((response) => {
+      setFormData(response.data), console.log(response.data);
+    }).catch((err) => {
+      console.log("erro ao econtrar cep");
     });
+  }
+  function submitForm(e) {
+    e.preventDefault(), console.log("os dados:", data);
   }
   return /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(import_jsx_dev_runtime12.Fragment, { children: /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)("div", { className: "flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)("div", { className: "sm:mx-auto sm:w-full sm:max-w-sm", children: [
@@ -1187,69 +1230,68 @@ function CreateAcount() {
         !1,
         {
           fileName: "app/routes/createacount.tsx",
-          lineNumber: 108,
+          lineNumber: 109,
           columnNumber: 13
         },
         this
       ),
       /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)("h2", { className: "mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900", children: "Fa\xE7a seu cadastro" }, void 0, !1, {
         fileName: "app/routes/createacount.tsx",
-        lineNumber: 113,
+        lineNumber: 114,
         columnNumber: 13
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/createacount.tsx",
-      lineNumber: 107,
+      lineNumber: 108,
       columnNumber: 11
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)("div", { className: "mt-10 sm:mx-auto sm:w-full sm:max-w-sm", children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(import_react6.Form, { className: "space-y-6", action: "#", method: "post", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(import_react6.Form, { className: "space-y-6", onSubmit: submitForm, children: [
         /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)("div", { children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)("label", { htmlFor: "email", className: "block text-sm font-medium leading-6 text-gray-900", children: "Nome Completo" }, void 0, !1, {
             fileName: "app/routes/createacount.tsx",
-            lineNumber: 121,
+            lineNumber: 122,
             columnNumber: 17
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)("div", { className: "mt-2", children: /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(
             "input",
             {
-              id: "name",
               placeholder: "Digite seu nome aqui",
-              name: "name",
               type: "text",
               autoComplete: "email",
               required: !0,
+              onChange: (e) => {
+                setFormData({ ...formData, name: e.target.value }), console.log(formData);
+              },
               className: "block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 p-2"
             },
             void 0,
             !1,
             {
               fileName: "app/routes/createacount.tsx",
-              lineNumber: 125,
+              lineNumber: 126,
               columnNumber: 19
             },
             this
           ) }, void 0, !1, {
             fileName: "app/routes/createacount.tsx",
-            lineNumber: 124,
+            lineNumber: 125,
             columnNumber: 17
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)("label", { htmlFor: "email", className: "block text-sm font-medium leading-6 text-gray-900", children: "Cep" }, void 0, !1, {
             fileName: "app/routes/createacount.tsx",
-            lineNumber: 135,
+            lineNumber: 139,
             columnNumber: 17
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)("div", { className: "inline-flex mt-2", children: [
             /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(
               "input",
               {
-                id: "cep",
                 placeholder: "Digite seu cep, ex:12345-678",
-                name: "cep",
                 type: "tel",
-                value: address == null ? void 0 : address.cep,
+                value: formData == null ? void 0 : formData.cep,
                 onChange: (e) => {
-                  setAddress({ ...address, cep: e.target.value }), console.log(address);
+                  setFormData({ ...formData, cep: e.target.value }), console.log(formData);
                 },
                 autoComplete: "email",
                 required: !0,
@@ -1259,7 +1301,7 @@ function CreateAcount() {
               !1,
               {
                 fileName: "app/routes/createacount.tsx",
-                lineNumber: 139,
+                lineNumber: 143,
                 columnNumber: 19
               },
               this
@@ -1276,32 +1318,30 @@ function CreateAcount() {
               !1,
               {
                 fileName: "app/routes/createacount.tsx",
-                lineNumber: 155,
+                lineNumber: 157,
                 columnNumber: 19
               },
               this
             )
           ] }, void 0, !0, {
             fileName: "app/routes/createacount.tsx",
-            lineNumber: 138,
+            lineNumber: 142,
             columnNumber: 17
           }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)("label", { htmlFor: "email", className: "block text-sm font-medium leading-6 text-gray-900", children: "Rua" }, void 0, !1, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)("label", { htmlFor: "email", className: "block text-sm font-medium leading-6 text-gray-900", children: "Endere\xE7o" }, void 0, !1, {
             fileName: "app/routes/createacount.tsx",
-            lineNumber: 162,
+            lineNumber: 164,
             columnNumber: 17
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)("div", { className: "mt-2", children: /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(
             "input",
             {
-              id: "stret",
               placeholder: "Digite sua rua",
-              name: "street",
               type: "text",
               autoComplete: "email",
-              value: address == null ? void 0 : address.logradouro,
+              value: formData == null ? void 0 : formData.logradouro,
               onChange: (e) => {
-                setAddress({ ...address, logradouro: e.target.value }), console.log(address);
+                setFormData({ ...formData, logradouro: e.target.value }), console.log(formData);
               },
               required: !0,
               className: "block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 p-2"
@@ -1310,13 +1350,13 @@ function CreateAcount() {
             !1,
             {
               fileName: "app/routes/createacount.tsx",
-              lineNumber: 166,
+              lineNumber: 168,
               columnNumber: 19
             },
             this
           ) }, void 0, !1, {
             fileName: "app/routes/createacount.tsx",
-            lineNumber: 165,
+            lineNumber: 167,
             columnNumber: 17
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)("label", { htmlFor: "email", className: "block text-sm font-medium leading-6 text-gray-900", children: "Bairro" }, void 0, !1, {
@@ -1327,13 +1367,11 @@ function CreateAcount() {
           /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)("div", { className: "mt-2", children: /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(
             "input",
             {
-              id: "neighborhood",
               placeholder: "Digite o seu bairro",
-              name: "neighborhood",
               type: "text",
-              value: address == null ? void 0 : address.bairro,
+              value: formData == null ? void 0 : formData.bairro,
               onChange: (e) => {
-                setAddress({ ...address, bairro: e.target.value }), console.log(address);
+                setFormData({ ...formData, bairro: e.target.value }), console.log(formData);
               },
               autoComplete: "email",
               required: !0,
@@ -1354,133 +1392,137 @@ function CreateAcount() {
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)("label", { htmlFor: "email", className: "block text-sm font-medium leading-6 text-gray-900", children: "N\xFAmero da casa" }, void 0, !1, {
             fileName: "app/routes/createacount.tsx",
-            lineNumber: 201,
+            lineNumber: 199,
             columnNumber: 17
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)("div", { className: "mt-2", children: /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(
             "input",
             {
-              id: "number",
               placeholder: "Digite o n\xFAmero de sua casa",
-              name: "number",
               type: "text",
               autoComplete: "email",
               required: !0,
+              onChange: (e) => {
+                setFormData({ ...formData, number: e.target.value });
+              },
               className: "block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 p-2"
             },
             void 0,
             !1,
             {
               fileName: "app/routes/createacount.tsx",
-              lineNumber: 205,
+              lineNumber: 203,
               columnNumber: 19
             },
             this
           ) }, void 0, !1, {
             fileName: "app/routes/createacount.tsx",
-            lineNumber: 204,
+            lineNumber: 202,
             columnNumber: 17
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)("label", { htmlFor: "email", className: "block text-sm font-medium leading-6 text-gray-900 ", children: "Email" }, void 0, !1, {
             fileName: "app/routes/createacount.tsx",
-            lineNumber: 215,
+            lineNumber: 216,
             columnNumber: 17
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)("div", { className: "mt-2", children: /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(
             "input",
             {
-              id: "email",
               placeholder: "Digite um email v\xE1lido",
-              name: "email",
               type: "email",
               autoComplete: "email",
               required: !0,
+              onChange: (e) => {
+                setFormData({ ...formData, email: e.target.value }), console.log(formData);
+              },
               className: "block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 p-2"
             },
             void 0,
             !1,
             {
               fileName: "app/routes/createacount.tsx",
-              lineNumber: 219,
+              lineNumber: 220,
               columnNumber: 19
             },
             this
           ) }, void 0, !1, {
             fileName: "app/routes/createacount.tsx",
-            lineNumber: 218,
+            lineNumber: 219,
             columnNumber: 17
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/createacount.tsx",
-          lineNumber: 120,
+          lineNumber: 121,
           columnNumber: 15
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)("div", { children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)("div", { className: "flex items-center justify-between", children: /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)("label", { htmlFor: "password", className: "block text-sm font-medium leading-6 text-gray-900", children: "Senha" }, void 0, !1, {
             fileName: "app/routes/createacount.tsx",
-            lineNumber: 234,
+            lineNumber: 238,
             columnNumber: 19
           }, this) }, void 0, !1, {
             fileName: "app/routes/createacount.tsx",
-            lineNumber: 233,
+            lineNumber: 237,
             columnNumber: 17
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)("div", { className: "mt-2", children: /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(
             "input",
             {
-              id: "password",
               placeholder: "Digite sua senha",
-              name: "password",
               type: "password",
               autoComplete: "current-password",
               required: !0,
+              onChange: (e) => {
+                setFormData({ ...formData, password: e.target.value }), console.log(formData);
+              },
               className: "block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 p-2"
             },
             void 0,
             !1,
             {
               fileName: "app/routes/createacount.tsx",
-              lineNumber: 239,
+              lineNumber: 243,
               columnNumber: 19
             },
             this
           ) }, void 0, !1, {
             fileName: "app/routes/createacount.tsx",
-            lineNumber: 238,
+            lineNumber: 242,
             columnNumber: 17
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)("label", { htmlFor: "email", className: "block text-sm font-medium leading-6 text-gray-900 ", children: "Confirme sua senha" }, void 0, !1, {
             fileName: "app/routes/createacount.tsx",
-            lineNumber: 249,
+            lineNumber: 256,
             columnNumber: 17
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)("div", { className: "mt-2", children: /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(
             "input",
             {
-              id: "confirm_password",
               placeholder: "Digite a senha novamente",
-              name: "password2",
               type: "password",
               autoComplete: "email",
               required: !0,
+              onChange: (e) => {
+                setFormData({ ...formData, passwordConfirmation: e.target.value }), console.log(formData);
+              },
               className: "block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading- p-2"
             },
             void 0,
             !1,
             {
               fileName: "app/routes/createacount.tsx",
-              lineNumber: 253,
+              lineNumber: 260,
               columnNumber: 19
             },
             this
           ) }, void 0, !1, {
             fileName: "app/routes/createacount.tsx",
-            lineNumber: 252,
+            lineNumber: 259,
             columnNumber: 17
           }, this)
         ] }, void 0, !0, {
           fileName: "app/routes/createacount.tsx",
-          lineNumber: 232,
+          lineNumber: 236,
           columnNumber: 15
         }, this),
         /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)("div", { children: [
@@ -1495,29 +1537,29 @@ function CreateAcount() {
             !1,
             {
               fileName: "app/routes/createacount.tsx",
-              lineNumber: 267,
+              lineNumber: 277,
               columnNumber: 17
             },
             this
           ),
           data != null && data.error ? /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(ErrorMessage, { text: data.error }, void 0, !1, {
             fileName: "app/routes/createacount.tsx",
-            lineNumber: 273,
+            lineNumber: 283,
             columnNumber: 30
           }, this) : "",
           data != null && data.success ? /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)(SuccessfullyEmail, { text: data.success }, void 0, !1, {
             fileName: "app/routes/createacount.tsx",
-            lineNumber: 274,
+            lineNumber: 284,
             columnNumber: 32
           }, this) : ""
         ] }, void 0, !0, {
           fileName: "app/routes/createacount.tsx",
-          lineNumber: 265,
+          lineNumber: 275,
           columnNumber: 15
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/createacount.tsx",
-        lineNumber: 119,
+        lineNumber: 120,
         columnNumber: 13
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)("p", { className: "mt-10 text-center text-sm text-gray-500", children: [
@@ -1525,26 +1567,26 @@ function CreateAcount() {
         " ",
         /* @__PURE__ */ (0, import_jsx_dev_runtime12.jsxDEV)("a", { href: "/login", className: "font-semibold leading-6 text-indigo-600 hover:text-indigo-500", children: "J\xE1 tenho uma conta" }, void 0, !1, {
           fileName: "app/routes/createacount.tsx",
-          lineNumber: 281,
+          lineNumber: 291,
           columnNumber: 15
         }, this)
       ] }, void 0, !0, {
         fileName: "app/routes/createacount.tsx",
-        lineNumber: 279,
+        lineNumber: 289,
         columnNumber: 13
       }, this)
     ] }, void 0, !0, {
       fileName: "app/routes/createacount.tsx",
-      lineNumber: 118,
+      lineNumber: 119,
       columnNumber: 11
     }, this)
   ] }, void 0, !0, {
     fileName: "app/routes/createacount.tsx",
-    lineNumber: 106,
+    lineNumber: 107,
     columnNumber: 9
   }, this) }, void 0, !1, {
     fileName: "app/routes/createacount.tsx",
-    lineNumber: 104,
+    lineNumber: 105,
     columnNumber: 7
   }, this);
 }
